@@ -45,13 +45,13 @@ header{
 /*Styles para el banner*/
 
 .banner{
-    background-color: #ccbfa6;
+    background-color: #928B8E;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .banner-left{
-   background-color: wheat;
+   /* background-color: wheat; */
    padding: 80px;
 }
 .linea{    
@@ -59,4 +59,35 @@ header{
     border-width: 4px;
 }
 
+.deportistas{
+    width: 300px;
+}
 
+/* Lista de Productos*/
+
+.nuestrosProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.caja{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.cajita{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gray;
+}
+
+.items{
+    width: 200px;
+}

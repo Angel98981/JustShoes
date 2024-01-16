@@ -10,7 +10,7 @@
 
 ---------------- HTML & CSS---------------------
 * Angel: Pagina principal, carrito de compra
-* Camila: Login/register (Terminar diseño)
+* Camila: Login/register (Terminar diseño), Info producto
 * Miguel: productos, Contacto
 
 ---------------- JS ------------------------

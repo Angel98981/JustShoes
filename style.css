@@ -8,12 +8,18 @@ header{
     justify-content: space-between;    
     align-items: center;
     background-color: black;
-    padding: 20px;
+    
 }
 .navBar{    
     display: flex;
     gap: 20px;
 }
+.logo{
+    width: 85px;
+    position: relative;
+    left: 20px;
+}
+
 /* inicio/producto/contacto */
 .def{
     color: white;    
@@ -22,10 +28,12 @@ header{
 }
 .def:hover{
     color: #ffffff;
-    border-bottom: 2px solid #ffad12;
+    border-bottom: 2px solid #81c9fa;
 }
 /*iconos usuario y bolsa de compra*/
 .iconos{    
+    position: relative;
+    right: 20px;
     gap: 5px;
 }
 .icono{
@@ -33,7 +41,7 @@ header{
     bottom: 2px;
 }
 .material-symbols-outlined {
-    color: #ffad12;
+    color: #81c9fa;
     font-size: 35px;    
   font-variation-settings:
   'FILL' 0,
@@ -45,7 +53,7 @@ header{
 /*Styles para el banner*/
 
 .banner{
-    background-color: #928B8E;
+    background-color: #ece5e8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,8 +63,11 @@ header{
    padding: 80px;
 }
 .linea{    
-    border-color: #ffa600;
+    color: #81c9fa;    
     border-width: 4px;
+}
+.btn-outline-info{
+    border: solid #81c9fa;
 }
 
 .deportistas{
@@ -75,6 +86,7 @@ header{
 
 .caja{
     padding-top: 30px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
@@ -84,10 +96,43 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
     align-items: center;
     border: solid 1px gray;
 }
 
 .items{
     width: 200px;
+}
+
+/*Ayuda/Dudas/Redes*/
+
+.help{
+    padding-top: 50px;
+    background-color: #c5bcc0;
+    display: grid;
+    gap: 200px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #c5bcc0;
+    display: flex;
+    justify-content: space-around;
+    gap: 500px;
+}
+.politicas{
+    display: flex;
+}
+.redBoton{
+    text-decoration: none;
 }

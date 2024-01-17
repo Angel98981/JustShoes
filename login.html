@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustShoes</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <header>                
+        <img class="logo" src="img/image.png" alt="logo" />
+        <div class="navBar">
+          <a class="def" href="">Inicio</a>
+          <a class="def" href="">Productos</a>
+          <a class="def" href="">Contacto</a>
+        </div>
+        <div class="iconos">
+          <a href=""
+            ><span class="material-symbols-outlined"> account_circle </span></a
+          >
+          <a class="icono" href=""
+            ><span class="material-symbols-outlined"> shopping_bag </span></a
+          >
+          <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
+        </div>
+    </header>
+    <section class="login">
+        <div class="contenedor-login">
+            <div class="informacion-contenedor-login">
+                <h3 class="subtitulo">Ingresa con:</h3>
+                <div class="social-login">
+                    <div class="social-login-elemento">
+                        <img src="./img/google.png" alt="google">
+                        <span>Google</span>
+                    </div>
+                    <div class="social-login-elemento">
+                        <img src="./img/facebook.svg" alt="Facebook">
+                        <span>Facebook</span>
+                    </div>
+                </div>
+                <p class="parrad">or</p>
+                <form class="inputs-contenedores">
+                    <input type="text" name="username" class="input" placeholder="Ingrese su usuario">
+                    <input type="password" name="password" class="input" placeholder="Ingrese su contraseña">
+                    <span class="span">¿Olvidaste tu contraseña?</span>
+                    <button class="btn">Ingresa</button>
+                    <a href="#" class="span">¿No tienes una cuenta?<span> Registrate</span></a>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

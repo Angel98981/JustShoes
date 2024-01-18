@@ -14,14 +14,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
     <header>
-      <img class="logo" src="img/image.png" alt="logo" />
+      <img class="logo" src="../img/image.png" alt="logo" />
       <div class="navBar">
-        <a class="def" href="index.html">Inicio</a>
+        <a class="def" href="../index.html">Inicio</a>
         <a class="def" href="">Productos</a>
         <a class="def" href="">Contacto</a>
       </div>
@@ -37,8 +37,9 @@
     </header>
     <section class="login">
       <div class="contenedor-login">
-        <div >
-          <img class="img-deportistas"
+        <div>
+          <img
+            class="img-deportistas"
             src="https://cdn.leonardo.ai/users/8617ca28-ca37-47f6-8c4d-eebbee47c576/generations/402999fe-1700-49df-b95d-56b96c89390a/Leonardo_Diffusion_XL_2_athletes_modeling_sportswear_0.jpg"
             alt=""
           />
@@ -47,30 +48,34 @@
           <h3 class="subtitulo">Ingresa con:</h3>
           <div class="social-login">
             <div class="social-login-elemento">
-              <img src="./img/google.png" alt="google" />
+              <img src="../img/google.png" alt="google" />
               <span>Google</span>
             </div>
             <div class="social-login-elemento">
-              <img src="./img/facebook.svg" alt="Facebook" />
+              <img src="../img/facebook.svg" alt="Facebook" />
               <span>Facebook</span>
             </div>
           </div>
           <p class="parrad">or</p>
-          <form class="inputs-contenedores">
+          <form class="inputs-contenedores" id="login">
             <input
               type="text"
               name="username"
+              id="user"
               class="input"
               placeholder="Ingrese su usuario"
+              required
             />
             <input
               type="password"
               name="password"
+              id="pass"
               class="input"
               placeholder="Ingrese su contraseña"
+              required
             />
             <span class="span">¿Olvidaste tu contraseña?</span>
-            <button class="btn">Ingresa</button>
+            <button class="btn" type="submit">Ingresa</button>
             <a href="#" class="span"
               >¿No tienes una cuenta?<span class="regi"> Registrate</span></a
             >
@@ -78,5 +83,6 @@
         </div>
       </div>
     </section>
+    <script src="../JS/login.js"></script>
   </body>
 </html>

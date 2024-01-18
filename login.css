@@ -1,8 +1,11 @@
 
 .login {
     justify-content: center;
-    padding: 150px;
-    background-image: url(https://img.freepik.com/foto-gratis/mujer-que-corre-calle-al-atardecer_23-2147925409.jpg?w=996&t=st=1705537607~exp=1705538207~hmac=c382799e592634fc7aa7bab6af19b2d56fad1398d14e1dae3759fda5ad080be4);
+    padding: 95px;
+    /* background-color:#81c9fa; */
+    background-image: url(https://img.freepik.com/foto-gratis/vista-lateral-hombre-deportivo-corriendo-muelle-cerca-mar_8353-6845.jpg?w=996&t=st=1705544619~exp=1705545219~hmac=9423c74093fb35325a2f14b26ac0f30694e5ec5b876bc9647eb9060bd762ab09);
+    /* background-image: url(https://img.freepik.com/foto-gratis/hombre-corredor-calle_1150-5979.jpg?w=996&t=st=1705544578~exp=1705545178~hmac=1fd25410812595fc8d49881d12f3fa6ce4ee300ec03bafb8b971f76a21c4d848); */
+    /* background-image: url(https://img.freepik.com/foto-gratis/hombre-ropa-deportiva-corriendo-carretera_273609-14230.jpg?w=996&t=st=1705544527~exp=1705545127~hmac=b06fe63743291bdf578332fc8d27f193d3515fa94a0b5f3ea7664405e6293878); */
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10.7%;
@@ -11,16 +14,16 @@
 .contenedor-login {
     margin: auto auto;
     width: 50%;
-    height: 100%;
+    height: 90%;
     display: flex;    
     border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75); */
 }
 
 .informacion-contenedor-login {
-    padding: 20px 0px;
-    width: 80%;
+    padding: 30px 0px;
+    width: 85%;
     
     display: flex;
     flex-direction: column;
@@ -135,5 +138,5 @@ form {
 }
 .img-deportistas{
     width: 350px;
-    border-radius: 10px 0px 0px 10px;
+    /* border-radius: 10px 0px 0px 10px; */
 }

@@ -83,7 +83,6 @@
 
 .info-formulario h2 {
     font-size: 30px;
-    margin-bottom: 15px;
 }
 
 .iconos-login {
@@ -141,7 +140,6 @@
     padding: 10px 20px;
     color: rgb(3, 137, 255) ;
     cursor: pointer;
-    margin-top: 8px;
 }
 
 .form input[type="submit"]:hover {

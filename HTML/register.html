@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -14,7 +14,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="../CSS/register.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -38,43 +38,48 @@
         </div>
     </header>
 
-    <section class="formulario">
-        <div class="contenedor-formulario iniciarSesion">
+    <section class="formulario hide">
+      <div class="contenedor-formulario registrarCuenta">
 
           <div class="informacion-bienvenida">
               <div class="info-bienvenida">
-                  <h2>¡Bienvenido!</h2>
-                  <p>¡Explora el mundo del rendimiento y estilo con nosotros! Si aún no tienes una cuenta, 
-                    Regístrate para acceder a ofertas exclusivas y descubrir prendas que te inspirarán a superar tus límites.
+                  <h2>¡Bienvenido <br>
+                    de Nuevo!</h2>
+                  <p>Inicia sesión para desatar un mundo de ofertas exclusivas y descubrir la última moda deportiva que se adapta a tu estilo. 
+                    <strong>¡Tu próxima aventura comienza con un clic!</strong>
                   </p>
-                  <a href="../HTML/register.html">
-                    <input type="button" value="Registrarse" id="registrarse">
+                  <a href="../HTML/login.html">
+                    <input type="button" value="Inicia sesión" id="iniciar">
                   </a>
               </div>
           </div>
 
           <div class="informacion-formulario">
               <div class="info-formulario">
-                  <h2>Iniciar sesión</h2>
+                  <h2>Crear una cuenta</h2>
                   <div class="iconos-login">
                       <i class='bx bxl-google'></i>
                       <i class='bx bxl-facebook'></i>
                   </div>
                   <form class="form">
                       <label>
+                          <i class='bx bx-user'></i>
+                          <input class="label-registro" type="text" placeholder="Nombre Completo">
+                      </label>
+                      <label>
                           <i class='bx bx-envelope' ></i>
-                          <input type="email" placeholder="Correo Electronico">
+                          <input class="label-registro" type="email" placeholder="Correo Electronico">
                       </label>
                       <label>
                           <i class='bx bx-lock-alt' ></i>
-                          <input type="password" placeholder="Contraseña">
+                          <input class="label-registro" type="password" placeholder="Contraseña">
                       </label>
-                      <input type="submit" value="iniciar Sesión">
+                      <input type="submit" value="Registrarse">
                   </form>
               </div>
           </div>
 
-        </div>
+      </div>
     </section>
 
 </body>

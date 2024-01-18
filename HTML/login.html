@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JustShoes</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -16,73 +16,64 @@
     />
     <link rel="stylesheet" href="../CSS/login.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
-  </head>
-  <body>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
     <header>
-      <img class="logo" src="../img/image.png" alt="logo" />
-      <div class="navBar">
-        <a class="def" href="../index.html">Inicio</a>
-        <a class="def" href="">Productos</a>
-        <a class="def" href="">Contacto</a>
-      </div>
-      <div class="iconos">
-        <a href=""
-          ><span class="material-symbols-outlined"> account_circle </span></a
-        >
-        <a class="icono" href="cart.html"
-          ><span class="material-symbols-outlined"> shopping_bag </span></a
-        >
-        <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
-      </div>
-    </header>
-    <section class="login">
-      <div class="contenedor-login">
-        <div>
-          <img
-            class="img-deportistas"
-            src="https://cdn.leonardo.ai/users/8617ca28-ca37-47f6-8c4d-eebbee47c576/generations/402999fe-1700-49df-b95d-56b96c89390a/Leonardo_Diffusion_XL_2_athletes_modeling_sportswear_0.jpg"
-            alt=""
-          />
+        <img class="logo" src="../img/image.png" alt="logo" />
+        <div class="navBar">
+          <a class="def" href="../index.html">Inicio</a>
+          <a class="def" href="">Productos</a>
+          <a class="def" href="">Contacto</a>
         </div>
-        <div class="informacion-contenedor-login">
-          <h3 class="subtitulo">Ingresa con:</h3>
-          <div class="social-login">
-            <div class="social-login-elemento">
-              <img src="../img/google.png" alt="google" />
-              <span>Google</span>
-            </div>
-            <div class="social-login-elemento">
-              <img src="../img/facebook.svg" alt="Facebook" />
-              <span>Facebook</span>
-            </div>
-          </div>
-          <p class="parrad">or</p>
-          <form class="inputs-contenedores" id="login">
-            <input
-              type="text"
-              name="username"
-              id="user"
-              class="input"
-              placeholder="Ingrese su usuario"
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              id="pass"
-              class="input"
-              placeholder="Ingrese su contraseña"
-              required
-            />
-            <span class="span">¿Olvidaste tu contraseña?</span>
-            <button class="btn" type="submit">Ingresa</button>
-            <a href="#" class="span"
-              >¿No tienes una cuenta?<span class="regi"> Registrate</span></a
-            >
-          </form>
+        <div class="iconos">
+          <a href=""
+            ><span class="material-symbols-outlined"> account_circle </span></a
+          >
+          <a class="icono" href="cart.html"
+            ><span class="material-symbols-outlined"> shopping_bag </span></a
+          >
+          <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
         </div>
-      </div>
+      </header>
+
+    <section class="formulario">
+        <div class="contenedor-formulario">
+
+            <div class="informacion-bienvenida">
+                <div class="info-bienvenida">
+                    <h2>¡Bienvenido!</h2>
+                    <p>Inicia sesión para desatar un mundo de ofertas exclusivas y descubrir la última moda deportiva que se adapta a tu estilo. 
+                    <strong>¡Tu próxima aventura comienza con un clic!</strong>
+                    </p>
+                    <input type="button" value="Inicia sesión">
+                </div>
+            </div>
+
+            <div class="informacion-formulario">
+                <div class="info-formulario">
+                    <h2>Iniciar sesión</h2>
+                    <div class="iconos-login">
+                        <i class='bx bxl-google'></i>
+                        <i class='bx bxl-facebook'></i>
+                    </div>
+                    <form class="form">
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo Electronico">
+                        </label>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="Contraseña">
+                        </label>
+                        <input type="submit" value="Registrarse">
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </section>
-    <script src="../JS/login.js"></script>
-  </body>
+
+</body>
 </html>

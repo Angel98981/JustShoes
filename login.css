@@ -1,25 +1,32 @@
+
 .login {
-    margin-top: 80px;
+    justify-content: center;
+    padding: 150px;
+    background-image: url(https://img.freepik.com/foto-gratis/mujer-que-corre-calle-al-atardecer_23-2147925409.jpg?w=996&t=st=1705537607~exp=1705538207~hmac=c382799e592634fc7aa7bab6af19b2d56fad1398d14e1dae3759fda5ad080be4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10.7%;
+
 }
 .contenedor-login {
     margin: auto auto;
-    width: 40%;
+    width: 50%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
 }
 
 .informacion-contenedor-login {
     padding: 20px 0px;
     width: 80%;
-    margin: auto;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    /* margin-bottom: 50px;     */
     background-color: white;
 }
 
@@ -122,4 +129,11 @@ form {
     font-weight: 400;
     text-decoration: none;
     cursor: pointer;
+}
+.regi{
+    color: #2e88fe;
+}
+.img-deportistas{
+    width: 350px;
+    border-radius: 10px 0px 0px 10px;
 }

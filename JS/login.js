@@ -14,6 +14,8 @@
 // const usuarioGuardado=JSON.parse(window.localStorage.getItem("dato"))
 // console.log(usuarioGuardado);
 
+
+
 const login=document.querySelector("#login")
 
 login.addEventListener("submit",(e)=>{
@@ -22,5 +24,6 @@ login.addEventListener("submit",(e)=>{
     const pass=document.querySelector("#pass").value
     console.log(user, pass);
 })
+
 
 

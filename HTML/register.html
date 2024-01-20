@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
     <link
       rel="stylesheet"
@@ -16,71 +16,95 @@
     />
     <link rel="stylesheet" href="../CSS/register.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <img class="logo" src="../img/image.png" alt="logo" />
-        <div class="navBar">
-          <a class="def" href="../index.html">Inicio</a>
-          <a class="def" href="../HTML/productos.html">Productos</a>
-          <a class="def" href="">Contacto</a>
-        </div>
-        <div class="iconos">
-          <a href=""
-            ><span class="material-symbols-outlined"> account_circle </span></a
-          >
-          <a class="icono" href="cart.html"
-            ><span class="material-symbols-outlined"> shopping_bag </span></a
-          >
-          <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
-        </div>
+      <img class="logo" src="../img/image.png" alt="logo" />
+      <div class="navBar">
+        <a class="def" href="../index.html">Inicio</a>
+        <a class="def" href="../HTML/productos.html">Productos</a>
+        <a class="def" href="">Contacto</a>
+      </div>
+      <div class="iconos">
+        <a href=""
+          ><span class="material-symbols-outlined"> account_circle </span></a
+        >
+        <a class="icono" href="cart.html"
+          ><span class="material-symbols-outlined"> shopping_bag </span></a
+        >
+        <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
+      </div>
     </header>
 
     <section class="formulario hide">
       <div class="contenedor-formulario registrarCuenta">
-
-          <div class="informacion-bienvenida">
-              <div class="info-bienvenida">
-                  <h2>¡Bienvenido <br>
-                    de Nuevo!</h2>
-                  <p>Inicia sesión para desatar un mundo de ofertas exclusivas y descubrir la última moda deportiva que se adapta a tu estilo. 
-                    <strong>¡Tu próxima aventura comienza con un clic!</strong>
-                  </p>
-                  <a href="../HTML/login.html">
-                    <input type="button" value="Inicia sesión" id="iniciar">
-                  </a>
-              </div>
+        <div class="informacion-bienvenida">
+          <div class="info-bienvenida">
+            <h2>
+              ¡Bienvenido <br />
+              de Nuevo!
+            </h2>
+            <p>
+              Inicia sesión para desatar un mundo de ofertas exclusivas y
+              descubrir la última moda deportiva que se adapta a tu estilo.
+              <strong>¡Tu próxima aventura comienza con un clic!</strong>
+            </p>
+            <a href="../HTML/login.html">
+              <input type="button" value="Inicia sesión" id="iniciar" />
+            </a>
           </div>
+        </div>
 
-          <div class="informacion-formulario">
-              <div class="info-formulario">
-                  <h2>Crear una cuenta</h2>
-                  <div class="iconos-login">
-                      <i class='bx bxl-google'></i>
-                      <i class='bx bxl-facebook'></i>
-                  </div>
-                  <form class="form">
-                      <label>
-                          <i class='bx bx-user'></i>
-                          <input class="label-registro" type="text" placeholder="Nombre Completo">
-                      </label>
-                      <label>
-                          <i class='bx bx-envelope' ></i>
-                          <input class="label-registro" type="email" placeholder="Correo Electronico">
-                      </label>
-                      <label>
-                          <i class='bx bx-lock-alt' ></i>
-                          <input class="label-registro" type="password" placeholder="Contraseña">
-                      </label>
-                      <input type="submit" value="Registrarse">
-                  </form>
-              </div>
+        <div class="informacion-formulario">
+          <div class="info-formulario">
+            <h2>Crear una cuenta</h2>
+            <div class="iconos-login">
+              <i class="bx bxl-google"></i>
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <form class="form">
+              <label>
+                <i class="bx bx-user"></i>
+                <input
+                  class="label-registro"
+                  id="registroNombre"
+                  type="text"
+                  placeholder="Nombre Completo"
+                  required
+                />
+              </label>
+              <label>
+                <i class="bx bx-envelope"></i>
+                <input
+                  class="label-registro"
+                  id="registroEmail"
+                  type="email"
+                  placeholder="Correo Electronico"
+                  required
+                  autocomplete="current-email"
+                />
+              </label>
+              <label>
+                <i class="bx bx-lock-alt"></i>
+                <input
+                  class="label-registro"
+                  id="registroPass"
+                  type="password"
+                  placeholder="Contraseña"
+                  required
+                  autocomplete="current-password"
+                />
+              </label>
+              <input type="submit" id="registro"  value="Registrarse" />
+            </form>
           </div>
-
+        </div>
       </div>
     </section>
-
-</body>
+    <script src="../JS/register.js"></script>
+  </body>
 </html>

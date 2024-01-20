@@ -28,6 +28,7 @@
           <a class="def" href="">Contacto</a>
         </div>
         <div class="iconos">
+          <div class="nombreUsuario"></div>
           <a href="./login.html"
             ><span class="material-symbols-outlined"> account_circle </span></a
           >
@@ -63,19 +64,19 @@
                   <form class="form">
                       <label>
                           <i class='bx bx-envelope' ></i>
-                          <input type="email" placeholder="Correo Electronico">
+                          <input type="email" id="userEmail" placeholder="Correo Electronico" required autocomplete="current-email"> 
                       </label>
                       <label>
                           <i class='bx bx-lock-alt' ></i>
-                          <input type="password" placeholder="Contraseña">
+                          <input type="password" id="userPass" placeholder="Contraseña" required autocomplete="current-password">
                       </label>
-                      <input type="submit" value="iniciar Sesión">
+                      <input type="submit" id="login" value="iniciar Sesión">
                   </form>
               </div>
           </div>
 
         </div>
     </section>
-
+    <script src="../JS/login.js"></script>
 </body>
 </html>

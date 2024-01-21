@@ -16,39 +16,31 @@
 
 const login = document.querySelector("#login");
 
+
 login.addEventListener("click", (e) => {
   e.preventDefault();
   const userEmail = document.querySelector("#userEmail").value;
   const userPass = document.querySelector("#userPass").value;
-
+  
   const usuariosRegistrados =
     JSON.parse(localStorage.getItem("usuarios")) || [];
-  let inicioSesionExitoso = false;
+  let inicioSesionExitoso = false;  
   usuariosRegistrados.forEach((usuarios) => {
     if (usuarios.email === userEmail && usuarios.pass === userPass) {
       inicioSesionExitoso = true;
+      localStorage.setItem('inicioSesionExitoso', inicioSesionExitoso);     
     }
   });
   // Con esto verificamos si el usuario efectivamente esta en el local storage
   if (inicioSesionExitoso) {
     console.log("Inicio de sesión exitoso");
     alert("se ha iniciado sesión");
-    // window.location.href = `../index.html`;
-    injectName(usuariosRegistrados);
+    window.location.href = `../index.html`;    
   } else {
+    localStorage.setItem('inicioSesionExitoso', inicioSesionExitoso); 
     console.log("Inicio de sesión fallido. Verifica tus credenciales.");
+    console.log(inicioSesionExitoso);
   }
 });
 
-function injectName() {
-  const nombreUsuario = document.querySelector("#nombreUsuario");
-  const usuariosRegistrados =
-    JSON.parse(localStorage.getItem("usuarios")) || [];
-  usuariosRegistrados.forEach((caracteristica) => {
-    const { name } = caracteristica;
-    console.log(name);
-    nombreUsuario.innerHTML = `         
-        <p>${name}</p>
-        `;
-  });
-}
+

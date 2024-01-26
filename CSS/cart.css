@@ -56,7 +56,8 @@ header{
 .compra-slider{
     padding-top: 70px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 200px;    
 }
 .carrito{
     display: flex; 
@@ -88,9 +89,43 @@ header{
     gap: 10px;
 }
 
+/* Resumen del Pedido*/
+.cajaPedido{
+    padding: 20px 50px;
+    background-color: #c5bcc0;
+    justify-content: center;
+}
+.cajaPedido hr{
+    margin-top: 0px;
+}
+.alinearText{
+    display: flex;
+    justify-content: space-between;    
+}
+.alinearText p{
+    margin-bottom: 0px;
+}
+.pagar{
+    display: flex;
+    justify-content: center;       
+}
+.pagar button{
+    width: 100%;     
+}
+.formasPago{
+    margin-top: 20px;
+}
+.formasPago p{
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+
 /*Tambien te puede interesar*/
 
 .interes{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,149 +1,144 @@
-
-Reglas generales
-*{
-    margin: 0px;
+* {
+  margin: 0px;
 }
 /* Style para el navBar entero*/
-header{
-    display: flex;
-    justify-content: space-around;    
-    align-items: center;
-    background-color: black;
-    
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
 }
-.navBar{    
-    display: flex;
-    font-size: 23px;
-    gap: 20px;
+.navBar {
+  display: flex;
+  font-size: 23px;
+  gap: 20px;
 }
-.logo{
-    width: 100px;
-    position: relative;
-    left: 20px;
+.logo {
+  width: 100px;
+  position: relative;
+  left: 20px;
 }
 
 /* inicio/producto/contacto */
-.def{
-    color: white;    
-    text-decoration: none;
-    transition: border-bottom  ease;
+.def {
+  color: white;
+  text-decoration: none;
+  transition: border-bottom ease;
 }
-.def:hover{
-    color: #ffffff;
-    border-bottom: 2px solid #81c9fa;
+.def:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #81c9fa;
 }
-/*iconos usuario y bolsa de compra*/
-.iconos{    
-    position: relative;
-    right: 20px;
-    gap: 5px;
-    
+.iconos {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  gap: 5px;
+  
 }
-.icono{
-    position: relative;
-    bottom: 2px;
-    
+.icono {
+  position: relative;
+  bottom: 2px;
 }
 .material-symbols-outlined {
-    color: #81c9fa;
-    font-size: 45px;    
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 100
+  color: #81c9fa;
+  font-size: 45px;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 100;
 }
 
-/*Styles para el banner*/
-
-.banner{
-    background-color: #ece5e8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.banner-left{   
-   padding: 80px;
-   display: flex;
-   flex-direction: column;
+.papa {
+  display: flex;
 }
 
-.linea{    
-    color: #81c9fa;    
-    border-width: 4px;
-}
-.btn-outline-info{
-    border: solid #81c9fa;    
-}
-
-.deportistas{
-    width: 500px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center; /* Columnas adaptables */
+  /* Espacio entre celdas */
+  margin-right: 20px;
+  width: 90%;
 }
 
-/* Lista de Productos*/
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
 
-.nuestrosProductos{
-    display: flex;
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: auto; /* Una columna en pantallas pequeñas */
+  }
+
+  .papa {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
+  }
 }
 
-.caja{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-}
-.cajita{
-    width: 450px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    border: solid 1px gray;
+.categoria-container {
+  display: grid;
+  grid-template-columns: 50%; /* Una columna */
+  gap: 5px; /* Espacio entre celdas */
+  padding: 20px;
 }
 
-.items{
-    width: 200px;
-}
-.g-0{
-    justify-content: center;
-    align-items: center;
-}
-
-/*Ayuda/Dudas/Redes*/
-
-.help{
-    padding-top: 50px;
-    background-color: #c5bcc0;
-    display: grid;
-    gap: 200px;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-}
-.redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.categoria-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  gap: 1px;
+  width: 200px;
+  border-radius: 7px;
 }
 
-
-/*footer*/
-
-footer{
-    background-color: #c5bcc0;
-    display: flex;
-    justify-content: space-around;
-    gap: 500px;
+.help {
+  padding-top: 50px;
+  background-color: #c5bcc0;
+  display: grid;
+  gap: 200px;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
 }
-.politicas{
-    display: flex;
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.redBoton{
-    text-decoration: none;
+
+footer {
+  background-color: #c5bcc0;
+  display: flex;
+  justify-content: space-around;
+  gap: 500px;
+}
+.politicas {
+  display: flex;
+}
+.redBoton {
+  text-decoration: none;
+}
+
+.prueba {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: auto;
+}
+
+.prueba label {
+  margin-bottom: 3px; /* Espaciado entre checkboxes */
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.check p{
+  height: 8px;
 }

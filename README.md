@@ -9,8 +9,13 @@
 
 
 ---------------- HTML & CSS---------------------
-* Angel: Pagina principal, carrito de compra
-* Camila: Login/register (Terminar diseño), Info producto
-* Miguel: productos, Contacto
+* Angel: agregar imagenes organizar fotter // pagar
+* Camila: diseño de pagina personalizar 
+* Miguel:
 
 ---------------- JS ------------------------
+trabajo grupal: productos.
+miguel: productos.
+camila: carrito de compra 
+angel: termianr el inicio de sesion 
+

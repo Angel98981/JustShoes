@@ -1,0 +1,217 @@
+/* Reglas generales */
+*{
+    margin: 0px;
+}
+/* Style para el navBar entero*/
+header{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    background-color: black;
+    
+}
+.navBar{    
+    display: flex;
+    font-size: 23px;
+    gap: 20px;
+}
+.logo{
+    width: 100px;
+    position: relative;
+    left: 20px;
+}
+
+/* inicio/producto/contacto */
+.def{
+    color: white;    
+    text-decoration: none;
+    transition: border-bottom  ease;
+}
+.def:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #81c9fa;
+}
+/*iconos usuario y bolsa de compra*/
+.iconos{    
+    position: relative;
+    right: 20px;
+    gap: 5px;
+    
+}
+.icono{
+    position: relative;
+    bottom: 2px;
+    
+}
+.material-symbols-outlined {
+    color: #81c9fa;
+    font-size: 45px;    
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 100
+}
+
+
+/* seccion de producto */
+.producto {
+    margin: 165px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagenes-columna {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 20px;
+}
+
+.imagen-grande {
+    margin: 0px 50px;
+}
+
+.titulo-producto{
+    font-size: 40px;
+    font-weight: 1000;
+    color: #2da4f4;
+    margin-bottom: -2px;
+
+}
+
+.genero-producto {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.precio-producto {
+    margin-bottom: 45px;
+}
+
+.contenedor-tallas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 30px;
+
+}
+
+.tallas-input {
+    position: absolute!important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tallas {
+    border: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #81c9fa;
+}
+
+.tallas label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.boton-carrito {
+    width: 100%;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: white;
+    border-color:#81c9fa;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2da4f4;
+}
+
+
+/*Tambien te puede interesar*/
+
+.interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tmb-interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tmb-interes h1 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.tmb-interes div {
+    width: 400px;
+}
+
+.cartas{
+    display: flex;
+    gap: 70px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.img-raya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.raya{   
+    width: 150px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/*Ayuda/Dudas/Redes*/
+
+.help{
+    padding-top: 50px;
+    background-color: #c5bcc0;
+    display: grid;
+    gap: 200px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #c5bcc0;
+    display: flex;
+    justify-content: space-around;
+    gap: 500px;
+}
+.politicas{
+    display: flex;
+}
+.redBoton{
+    text-decoration: none;
+}

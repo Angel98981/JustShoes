@@ -1,0 +1,28 @@
+{
+  "usuariosRegistrados": [
+    {
+      "id": "1",
+      "name": "Miguel Angel",
+      "email": "angel.rivera@gmail.com",
+      "pass": "1234"
+    },
+    {
+      "id": "239192",
+      "name": "manu",
+      "email": "manu@gmail.com",
+      "pass": "1111"
+    },
+    {
+      "id": "123455",
+      "name": "Juan Pablo ",
+      "email": "juanpablo@gmail.com",
+      "pass": "1234"
+    },
+    {
+      "id": "1111",
+      "name": "angel",
+      "email": "angel@gmail.com",
+      "pass": "1234"
+    }
+  ]
+}

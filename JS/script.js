@@ -1,43 +1,20 @@
-let nombreUsuario =
-  JSON.parse(localStorage.getItem("inicioSesionExitoso")) || false;
+const usernameElement = document.getElementById("nombreUsuario");
+let loggedInUserName = JSON.parse(localStorage.getItem("user"));
+usernameElement.textContent = loggedInUserName.name;
 
-console.log(nombreUsuario);
-
-if (nombreUsuario === true) {
-  injectName();
-} else {
-  const unete = "Unete!!";
+const logout = document.getElementById("logout")
+let cerrar = JSON.parse(localStorage.getItem("validate"))
+// 
+if (cerrar === true) {
+  logout.classList.remove("deactivate")
+  usernameElement.classList.remove("deactivate")
 }
+const cerrarSesion = document.querySelector("#closeSesion")
+cerrarSesion.addEventListener("click",()=>{
+  logout.classList.add("deactivate")
+  usernameElement.classList.add("deactivate")
+  localStorage.removeItem("user")
+  localStorage.removeItem("validate")  
+  
+})
 
-function injectName() {
-  const nombreUser = document.querySelector("#nombreUsuario");
-  const usuariosRegistrados =
-    JSON.parse(localStorage.getItem("usuarios")) || [];
-  usuariosRegistrados.forEach((caracteristica) => {
-    const { name } = caracteristica;
-    console.log(name);
-    nombreUser.innerHTML = `  
-            <style>
-                .nombreInsert{
-                    color: #81c9fa;
-                    font-size: 19px;
-                    font-weight: bold;
-                    position: relative;
-                    top: 5px;
-                }
-                @media only screen and (max-width: 600px){
-                    .nombreInsert{
-                        color: #81c9fa;
-                        font-size: 19px;
-                        font-weight: bold;
-                        position: relative;
-                        top: 5px;
-                        
-                    }
-                }
-            </style>
-            <p class="nombreInsert">${name}</p>
-            
-            `;
-  });
-}

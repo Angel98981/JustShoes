@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     
+    
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
         <a class="def" href="">Contacto</a>
       </div>
       <div class="iconos">
-        <div id="nombreUsuario" class="nombreUsuario"></div>
+        <div id="nombreUsuario" class="nombreUsuario deactivate"></div>
         <a href="HTML/login.html"
           ><span class="material-symbols-outlined"> account_circle </span></a
         >
@@ -34,6 +35,7 @@
           ><span class="material-symbols-outlined"> shopping_bag </span></a
         >
         <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
+        <div id="logout" class="deactivate"><button id="closeSesion">Logout</button></div>
       </div>
     </header>
     <section class="banner">
@@ -326,6 +328,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/JS/script.js"></script>
+    <script src="/JS/script.js" type="module"></script>
+    <script type="module" src="/JS/register.js"></script>
   </body>
 </html>

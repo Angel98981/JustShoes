@@ -66,7 +66,7 @@
               <i class="bx bxl-google"></i>
               <i class="bx bxl-facebook"></i>
             </div>
-            <form class="form">
+            <form class="form" id="formulario" type="POST">
               <label>
                 <i class="bx bx-user"></i>
                 <input
@@ -74,6 +74,16 @@
                   id="registroNombre"
                   type="text"
                   placeholder="Nombre Completo"
+                  required
+                />
+              </label>
+              <label>
+                <i class="bx bx-user"></i>
+                <input
+                  class="label-registro"
+                  id="registroId"
+                  type="text"
+                  placeholder="Documento de identidad"
                   required
                 />
               </label>
@@ -100,11 +110,13 @@
                 />
               </label>
               <input type="submit" id="registro"  value="Registrarse" />
+              <!-- <button type="submit" id="registro" class="btn btn-dark">ejemplo</button> -->
             </form>
           </div>
         </div>
       </div>
     </section>
-    <script src="../JS/register.js"></script>
+    <script src="../JS/register.js" type="module"></script>
+    
   </body>
 </html>

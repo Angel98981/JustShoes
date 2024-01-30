@@ -1,0 +1,247 @@
+/* Reglas generales */
+*{
+    margin: 0px;
+}
+/* Style para el navBar entero*/
+header{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    background-color: black;
+    
+}
+.navBar{    
+    display: flex;
+    font-size: 23px;
+    gap: 20px;
+}
+.logo{
+    width: 100px;
+    position: relative;
+    left: 20px;
+}
+
+/* inicio/producto/contacto */
+.def{
+    color: white;    
+    text-decoration: none;
+    transition: border-bottom  ease;
+}
+.def:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #81c9fa;
+}
+/*iconos usuario y bolsa de compra*/
+.iconos{    
+    position: relative;
+    right: 20px;
+    gap: 5px;
+    
+}
+.icono{
+    position: relative;
+    bottom: 2px;
+    
+}
+.material-symbols-outlined {
+    color: #81c9fa;
+    font-size: 45px;    
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 100
+}
+
+
+/* seccion de personalizar */
+.personalizar {
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.contenedor-personalizar {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+}
+
+/* seccion de vista del producto seleccionado */
+.vista-elegida {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* seccion de las opciones para personalizar */
+.opciones-personalizar {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.informacion-producto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;;
+    margin-bottom: 20px;
+}
+
+.informacion-producto h3 {
+    font-weight: 700;
+    color: #1465bb;
+    margin-left: 3px;
+}
+
+.informacion-producto p {
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.distintas-vistas {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.distintas-vistas img {
+    width: 24%;
+    background-color: white;
+}
+
+.seleccion-opciones {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.seleccion-opciones button {
+    display: flex;
+    padding: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px 0px;
+} 
+
+.seleccion-opciones img {
+    width: 30px;
+    margin: 4px 35px 0px 188px;
+}
+
+.seleccion-opciones p {
+    margin: 4px 0px 0px;
+    font-size: 18px;
+}
+
+.talla-cantidad {
+    margin: 4px 35px 0px 200px !important;
+}
+
+/* .carrito-compras {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.carrito-compras img {
+    width: 30px;
+    margin: 4px 35px 0px 0px;
+}
+
+.carrito-compras p {
+    margin: 4px 0px;
+    font-size: 18px;
+} */
+
+/*Tambien te puede interesar*/
+
+.interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tmb-interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tmb-interes h1 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.tmb-interes div {
+    width: 400px;
+}
+
+.cartas{
+    display: flex;
+    gap: 70px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.img-raya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.raya{   
+    width: 150px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/*Ayuda/Dudas/Redes*/
+
+.help{
+    padding-top: 50px;
+    background-color: #c5bcc0;
+    display: grid;
+    gap: 200px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #c5bcc0;
+    display: flex;
+    justify-content: space-around;
+    gap: 500px;
+}
+.politicas{
+    display: flex;
+}
+.redBoton{
+    text-decoration: none;
+}

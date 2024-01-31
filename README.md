@@ -14,8 +14,8 @@
 * Miguel:
 
 ---------------- JS ------------------------
-trabajo grupal: productos.
-miguel: productos.
-camila: carrito de compra 
-angel: termianr el inicio de sesion 
+* trabajo grupal: productos.
+* miguel: productos.
+* camila: personalizar  
+* angel: carrito de compra 
 

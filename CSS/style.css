@@ -77,6 +77,10 @@ header {
   border: solid #81c9fa;
 }
 
+.btnAboutUs{
+  color: black;
+}
+
 .deportistas {
   width: 500px;
 }

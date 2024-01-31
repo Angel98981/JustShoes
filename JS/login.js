@@ -13,9 +13,9 @@ login.addEventListener("click", async (e) => {
   const emailUsuario = document.querySelector("#userEmail").value;
   const passUsuario = document.querySelector("#userPass").value;
   const usersData = await getUsers();
-  let validate = false
   
-
+  
+  let validate = false
   usersData.forEach(user => {
 
     if(user.email === emailUsuario && user.pass === passUsuario ){
@@ -26,8 +26,8 @@ login.addEventListener("click", async (e) => {
         window.location.href="../index.html"
         
     }
-    if (validate === false){
-        alert("Datos incorrectos")
-      }
   }); 
+  if (validate === false){
+      alert("Datos incorrectos")
+    }
 });

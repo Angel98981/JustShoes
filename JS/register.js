@@ -14,7 +14,7 @@ function createUser(e) {
         id,
         name,
         email,
-        pass,
+        pass,        
     }
     // console.log(registroUser);
     newUser(registroUser)

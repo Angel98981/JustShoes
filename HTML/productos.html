@@ -22,18 +22,19 @@
         <img class="logo" src="../img/image.png" alt="logo" />
         <div class="navBar">
           <a class="def" href="../index.html">Inicio</a>
-          <a class="def" href="../HTML/productos.html">Productos</a>
-          <a class="def" href="">Contacto</a>
+          <a class="def" href="./HTML/productos.html">Productos</a>
+          <a class="def" href="./personalizar.html">personalizar</a>
         </div>
         <div class="iconos">
-          <div id="nombreUsuario" class="nombreUsuario"></div>
-          <a href="../HTML/login.html"
+          <div id="nombreUsuario" class="nombreUsuario deactivate"></div>
+          <a href="./login.html"
             ><span class="material-symbols-outlined"> account_circle </span></a
           >
-          <a class="icono" href="../HTML/cart.html"
+          <a class="icono" href="./cart.html"
             ><span class="material-symbols-outlined"> shopping_bag </span></a
           >
           <!-- Este tienen una clase para el solo por que se desplazo hacia arriba 2 px ya que con aling-items no alineaban los 2 iconos -->
+          <div id="logout" class="deactivate"><button id="closeSesion" class="btn btn-outline-info">Logout</button></div>
         </div>
       </header>
     </section>
@@ -407,4 +408,5 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"
   ></script>
+  <script src="../JS/productos.js" type="module"></script>
 </html>

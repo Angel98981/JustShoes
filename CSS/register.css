@@ -177,3 +177,11 @@
         border-bottom-right-radius: 20px;
     }
 }
+
+.nombreUsuario{
+    color: #81c9fa;
+    font-weight: bold;
+  }
+  .deactivate{
+    display: none;
+  }

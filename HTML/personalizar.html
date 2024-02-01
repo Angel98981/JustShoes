@@ -45,7 +45,7 @@
 
         <!-- seccion de vista del producto seleccionado -->
         <div class="vista-elegida">
-          <img src="../img/personalizar/1,width=800,height=800.png" alt="" width="140%">
+          <img class="imgPrincipal" src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/1/appearances/1,width=800,height=800" alt="" width="140%">
         </div>
         
         <!-- seccion de las opciones para personalizar -->
@@ -55,25 +55,29 @@
             <p class="precio">$ XXX.XXX</p>
           </div>
           <div class="distintas-vistas">
-            <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-            <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-            <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-            <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+            <img class="imagenes imgSeleccionada" 
+            src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/1/appearances/1,width=800,height=800" alt="">
+            <img class="imagenes" 
+            src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/2/appearances/1,width=800,height=800" alt="">
+            <img class="imagenes"  
+            src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/4/appearances/1,width=800,height=800" alt="">
+            <img class="imagenes" 
+            src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/3/appearances/1,width=800,height=800" alt="">
           </div>
           <div class="seleccion-opciones">
-            <button> 
+            <button data-bs-toggle="modal" data-bs-target="#modalproducto"> 
               <img src="../img/personalizar/camiseta.png" alt="">
               <p>Escoge un Producto</p>
             </button>
-            <button> 
+            <button data-bs-toggle="modal" data-bs-target="#modaldiseño"> 
               <img src="../img/personalizar/cepillo.png" alt="">
               <p>Escoge un Diseño</p>
             </button>
-            <button> 
+            <button data-bs-toggle="modal" data-bs-target="#modaltexto"> 
               <img src="../img/personalizar/texto.png" alt="">
               <p>Añadir un texto</p>
             </button>
-            <button> 
+            <button data-bs-toggle="modal" data-bs-target="#modalimagen"> 
               <img src="../img/personalizar/subir-imagen.png" alt="">
               <p>Cargar una imagen</p>
             </button>
@@ -88,7 +92,194 @@
         </div>
 
       </div>
+
+      <!-- modal boton de producto -->
+      <div class="modal fade" id="modalproducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content">
+            
+            <div class="modal-body" style="overflow-y: auto;">
+
+              <div class="modal-aside">
+                <div class="modal-icono">
+                  <img src="../img/personalizar/camiseta.png" alt="">
+                </div>
+                <h3 class="modal-titulo-producto">
+                  Buscar un producto
+                </h3>
+                <!-- <input type="text" class="modal-buscar-producto" placeholder="Introduzca su búsqueda aquí"> -->
+                <hr class="linea">
+                <div class="modal-btn-genero">
+                  <button>Hombre</button>
+                  <button>Mujer</button>
+                </div>
+                <hr class="linea">
+                <div class="modal-opciones-producto">
+                  <button>Camisas</button>
+                  <button>Pantalones</button>
+                  <button>Zapatos</button>
+                  <button>Sacos</button>
+                </div>
+              </div>
+
+              <div class="modal-main">
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="boton-elegir">Elegir</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
+      <!-- modal boton de producto -->
+      <div class="modal fade" id="modaldiseño" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content">
+            
+            <div class="modal-body" style="overflow-y: auto;">
+
+              <div class="modal-aside">
+                <div class="modal-icono">
+                  <img src="../img/personalizar/cepillo.png" alt="">
+                </div>
+                <h3 class="modal-titulo-producto">
+                  Busca un Diseño
+                </h3>
+                <input type="text" class="modal-buscar-producto" placeholder="Introduzca su búsqueda aquí">
+                <hr class="linea">
+                <div class="modal-opciones-producto">
+                  <button>Amor</button>
+                  <button>Formas</button>
+                  <button>Deportes</button>
+                  <button>Mensajes</button>
+                  <button>Animales</button>
+                  <button>Humor</button>
+                </div>
+              </div>
+
+              <div class="modal-main">
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+                <div class="contenido-modal">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                  <h5 class="titulo-contenido">Nombre Producto</h5>
+                  <P class="precio-contenido">$XXX.XXX</P>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="boton-elegir">Elegir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal boton de imagen -->
+      <div class="modal fade" id="modalimagen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content">
+            
+            <div class="modal-body" style="overflow-y: auto;">
+
+              <div class="modal-aside">
+                <div class="modal-icono">
+                  <img src="../img/personalizar/subir-imagen.png" alt="">
+                </div>
+                <h3 class="modal-titulo-producto">
+                  Carga tu imagen aquí
+                </h3>
+                <!-- Input de tipo file oculto -->
+                <input type="file" id="fileInput" name="archivo" accept=".png, .svg">
+                <label for="fileInput" class="custom-file-input">Seleccionar Archivo</label>
+                <hr class="linea">
+                <p class="derechos">Al importar el archivo, confirmo que tengo los derechos de autor o la licencia para usarlo.</p>
+              </div>
+
+              <div class="modal-main">
+                <div class="contenido-imagen">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                </div>
+                <div class="contenido-imagen">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                </div>
+                <div class="contenido-imagen">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                </div>
+                <div class="contenido-imagen">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                </div>
+                <div class="contenido-imagen">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                </div>
+                <div class="contenido-imagen">
+                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="boton-elegir">Elegir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
       
     <section class="interes">

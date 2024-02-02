@@ -42,7 +42,6 @@
     <section class="personalizar">
 
       <div class="contenedor-personalizar">
-
         <!-- seccion de vista del producto seleccionado -->
         <div class="vista-elegida">
           <img class="imgPrincipal" src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/1/appearances/1,width=800,height=800" alt="" width="140%">
@@ -55,13 +54,13 @@
             <p class="precio">$ XXX.XXX</p>
           </div>
           <div class="distintas-vistas">
-            <img class="imagenes imgSeleccionada" 
+            <img class="imagenes imgSeleccionada" id="A"
             src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/1/appearances/1,width=800,height=800" alt="">
-            <img class="imagenes" 
+            <img class="imagenes" id="B" 
             src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/2/appearances/1,width=800,height=800" alt="">
-            <img class="imagenes"  
+            <img class="imagenes"  id="C" 
             src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/4/appearances/1,width=800,height=800" alt="">
-            <img class="imagenes" 
+            <img class="imagenes" id="D"
             src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/3/appearances/1,width=800,height=800" alt="">
           </div>
           <div class="seleccion-opciones">
@@ -110,60 +109,31 @@
                 <!-- <input type="text" class="modal-buscar-producto" placeholder="Introduzca su búsqueda aquí"> -->
                 <hr class="linea">
                 <div class="modal-btn-genero">
-                  <button>Hombre</button>
-                  <button>Mujer</button>
+                  <button id="masculino" class="genero">Hombre</button>
+                  <button id="femenino" class="genero">Mujer</button>
                 </div>
                 <hr class="linea">
                 <div class="modal-opciones-producto">
-                  <button>Camisas</button>
-                  <button>Pantalones</button>
-                  <button>Zapatos</button>
-                  <button>Sacos</button>
+                  <button id="camisas" class="categoria">Camisas</button>
+                  <button id="pantalones" class="categoria">Pantalones</button>
+                  <button id="accesorios" class="categoria">Accesorios</button>
+                  <button id="busos" class="categoria">Busos</button>
                 </div>
               </div>
 
-              <div class="modal-main">
-                <div class="contenido-modal">
-                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-                  <h5 class="titulo-contenido">Nombre Producto</h5>
-                  <P class="precio-contenido">$XXX.XXX</P>
-                </div>
-                <div class="contenido-modal">
-                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-                  <h5 class="titulo-contenido">Nombre Producto</h5>
-                  <P class="precio-contenido">$XXX.XXX</P>
-                </div>
-                <div class="contenido-modal">
-                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-                  <h5 class="titulo-contenido">Nombre Producto</h5>
-                  <P class="precio-contenido">$XXX.XXX</P>
-                </div>
-                <div class="contenido-modal">
-                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-                  <h5 class="titulo-contenido">Nombre Producto</h5>
-                  <P class="precio-contenido">$XXX.XXX</P>
-                </div>
-                <div class="contenido-modal">
-                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-                  <h5 class="titulo-contenido">Nombre Producto</h5>
-                  <P class="precio-contenido">$XXX.XXX</P>
-                </div>
-                <div class="contenido-modal">
-                  <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-                  <h5 class="titulo-contenido">Nombre Producto</h5>
-                  <P class="precio-contenido">$XXX.XXX</P>
-                </div>
-              </div>
+              <div id="contenedorProductos" class="modal-main">
+                 <!-- aqui se completa con js -->
+              </div> 
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="boton-elegir">Elegir</button>
+              <button type="button" class="btn btn-secondary" id="cerrar" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- modal boton de producto -->
+      <!-- modal boton de diseño -->
       <div class="modal fade" id="modaldiseño" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl ">
           <div class="modal-content">
@@ -456,5 +426,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/personalizar.js"></script>
+    <script src="../JS/prueba.js"></script>
+
   </body>
 </html>

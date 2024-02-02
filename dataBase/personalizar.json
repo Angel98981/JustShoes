@@ -1,0 +1,308 @@
+{
+    "productos" : [
+    {
+        "id": "buso-01",
+        "titulo": "Radder",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1431/views/1/appearances/1,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1431/views/2/appearances/1,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1431/views/4/appearances/1,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1431/views/3/appearances/1,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "busos",
+            "id": "busos"
+        },
+        "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "$65.000"
+    },
+    {
+        "id": "buso-02",
+        "titulo": "Sudch",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/1/appearances/1,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/2/appearances/1,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/4/appearances/1,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/20/views/3/appearances/1,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "busos",
+            "id": "busos"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$50.000"
+    },
+    {
+        "id": "buso-03",
+    "titulo": "Russell",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1282/views/1/appearances/231,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1282/views/2/appearances/231,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1282/views/4/appearances/231,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1282/views/3/appearances/231,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "busos",
+            "id": "busos"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "$35.000"
+    },
+    {
+        "id": "buso-04",
+    "titulo": "Basic",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1513/views/1/appearances/62,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1513/views/2/appearances/62,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1513/views/4/appearances/62,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1513/views/3/appearances/62,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "busos",
+            "id": "busos"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$80.000"
+    },
+    
+
+    {
+        "id": "camisa-01",
+    "titulo": "Miset",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/718/views/1/appearances/70,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/718/views/2/appearances/70,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/718/views/4/appearances/70,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/718/views/3/appearances/70,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "camisas",
+            "id": "camisas"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "35.000"
+    },
+    {
+        "id": "camisa-02",
+    "titulo": "Port",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/881/views/1/appearances/54,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/881/views/2/appearances/54,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/881/views/4/appearances/54,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/881/views/3/appearances/54,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "camisas",
+            "id": "camisas"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$70.000"
+    },
+    {
+        "id": "camisa-03",
+    "titulo": "Ecogi",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/461/views/1/appearances/1,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/461/views/2/appearances/1,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/461/views/4/appearances/1,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/461/views/3/appearances/1,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "camisas",
+            "id": "camisas"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "$40.000"
+    },
+    {
+        "id": "camisa-04",
+    "titulo": "Noms",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/977/views/1/appearances/1,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/977/views/2/appearances/1,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/977/views/4/appearances/1,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/977/views/3/appearances/1,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "camisas",
+            "id": "camisas"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$85.000"
+    },
+    
+
+    {
+        "id": "accesorios-01",
+    "titulo": "Bolso",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/638/views/2/appearances/2,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/638/views/1/appearances/2,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "35.000"
+    },
+    {
+        "id": "accesorios-02",
+    "titulo": "Snapback",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/1/appearances/820,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/2/appearances/820,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/4/appearances/820,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/5/appearances/820,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$70.000"
+    },
+    {
+        "id": "accesorios-03",
+    "titulo": "Tifx",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/1/appearances/26,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/2/appearances/26,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/4/appearances/26,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/3/appearances/26,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "$40.000"
+    },
+    {
+        "id": "accesorios-04",
+    "titulo": "Flexfit",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/2383/views/1/appearances/884,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/2383/views/2/appearances/884,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+    
+        },
+        "precio": "$85.000"
+    },
+    
+
+    {
+        "id": "pantalones-01",
+    "titulo": "Bolso",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/638/views/2/appearances/2,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/638/views/1/appearances/2,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "pantalones",
+            "id": "pantalones"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "35.000"
+    },
+    {
+        "id": "pantalones-02",
+    "titulo": "Snapback",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/1/appearances/820,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/2/appearances/820,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/4/appearances/820,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1589/views/5/appearances/820,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "pantalones",
+            "id": "pantalones"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$70.000"
+    },
+    {
+        "id": "pantalones-03",
+    "titulo": "Tifx",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/1/appearances/26,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/2/appearances/26,width=800,height=800",
+            "izquierda": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/4/appearances/26,width=800,height=800",
+            "derecha": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/1040/views/3/appearances/26,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "pantalones",
+            "id": "pantalones"
+        },
+    "genero": {
+            "nombre": "femenino",
+            "id": "femenino"
+        },
+        "precio": "$40.000"
+    },
+    {
+        "id": "pantalones-04",
+    "titulo": "Flexfit",
+        "imagenes": {
+            "frontal": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/2383/views/1/appearances/884,width=800,height=800",
+            "trasera": "https://image.spreadshirtmedia.net/image-server/v1/productTypes/2383/views/2/appearances/884,width=800,height=800"
+        },
+        "categoria": {
+            "nombre": "pantalones",
+            "id": "pantalones"
+        },
+    "genero": {
+            "nombre": "masculino",
+            "id": "masculino"
+        },
+        "precio": "$85.000"
+    } 
+]
+
+}

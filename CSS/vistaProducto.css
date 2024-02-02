@@ -33,6 +33,7 @@ header{
 }
 /*iconos usuario y bolsa de compra*/
 .iconos{    
+    display: flex;    
     position: relative;
     right: 20px;
     gap: 5px;
@@ -45,7 +46,7 @@ header{
 }
 .material-symbols-outlined {
     color: #81c9fa;
-    font-size: 45px;    
+    font-size: 50px;    
   font-variation-settings:
   'FILL' 0,
   'wght' 300,
@@ -56,9 +57,16 @@ header{
     color: #81c9fa;
     font-weight: bold;
   }
-  .deactivate{
+.deactivate{
     display: none;
-  }
+}
+
+.contadorCarrito{
+    color: #2da4f4;
+    position: absolute;
+    left: 75px;
+    top: 15px;
+}
 
 
 /* seccion de producto */

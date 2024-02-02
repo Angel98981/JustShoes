@@ -3,35 +3,35 @@
     {
       "zapatos": [
         {
-          "id": 1,
+          "id":1,
           "nombre": "Nike Air Max Plus III",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Hombre/Nike-Air-Max-Plus-III/air-max-plus-iii-1.png",
           "genero": "hombre"
         },
         {
-          "id": 2,
+          "id":2,
           "nombre": "Nike Dunk Low Retro",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Hombre/Nike-Dunk-Low-Retro/dunk-low-retro-1.png",
           "genero": "hombre"
         },
         {
-          "id": 3,
+          "id":3,
           "nombre": "Nike Mercurial Superfly 9 Academy",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Hombre/Nike-Mercurial-Superfly-9-Academy/mercurial-superfly-9-academy-1.png",
           "genero": "hombre"
         },
         {
-          "id": 4,
+          "id":4,
           "nombre": "Nike Air Force 1 '07 EasyOn",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Mujer/Nike-Air-Force-1-'07-EasyOn/air-force-1-07-easyon-1.png",
           "genero": "mujer"
         },
         {
-          "id": 5,
+          "id":5,
           "nombre": "Nike V2K Run",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Mujer/Nike-V2K-Run/v2k-run-zapatillas-1.png",

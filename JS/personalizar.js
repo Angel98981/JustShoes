@@ -1,41 +1,62 @@
 //URLS
-const URLProductos = "http://localhost:3000/productos"
-// SELECTORES
+const URLProductos = "http://localhost:3000/productos";
+const URLDiseños = "http://localhost:3000/diseños";
 
+
+// SELECTORES-----------------------------------------------
 // Imagenes
 const imgPrincipal = document.querySelector(".imgPrincipal");
 const imagenes = document.querySelectorAll(".imagenes");
+
+
+
+// Modal producto
 const contenedorProductos = document.querySelector("#contenedorProductos");
 const categorias = document.querySelectorAll(".categoria");
 const generos = document.querySelectorAll(".genero");
+let generOculto = "";
+let categoriaOculto = "";
 
 
 
-// EVENTOS
+// Modal diseño
+const contenedorDiseños = document.querySelector("#contenedorDiseños");
+const categoriaDiseños = document.querySelectorAll(".categoria-diseños");
 
+
+// EVENTOS---------------------------------------
 // Imagenes
 imagenes.forEach(imagen => {
   imagen.addEventListener("click", intercambiar )
 });
 
+
+// Modal producto
 contenedorProductos.addEventListener("click", e =>{
   e.preventDefault();
-  console.log(e.target.getAttribute("id"));
   if (e.target.classList.contains("contenido-modal")){
     selectProduct(e.target.getAttribute("id"))
   }
-})
+});
+
 categorias.forEach(categoria => {
   categoria.addEventListener("click", seleccionCategoria)
 });
+
 
 generos.forEach(genero => {
   genero.addEventListener("click", seleccionGenero)
 });
 
 
-// FUNCIONES
+// Modal diseño
+categoriaDiseños.forEach(categoriaDiseño => {
+  categoriaDiseño.addEventListener("click", seleccionCategoriaDiseño)
+});
 
+
+
+// FUNCIONES--------------------------------------------------------
 // Imagenes
 function intercambiar (){
   const imgSeleccionada = document.querySelector(".imgSeleccionada");
@@ -44,88 +65,145 @@ function intercambiar (){
   imgPrincipal.src = this.src;
 };
 
-async function cargarProductos(){
-  const response = await fetch(URLProductos)
-  const productosElegidos = await response.json()
+
+
+// Modal producto
+function cargarProductos(productosElegidos){
   limpiar()
-  productosElegidos.forEach(productoElegido => {
-      console.log(productoElegido.id);
-      const div = document.createElement("div");
-      div.classList.add("contenido-modal");
-      div.setAttribute("id",`${productoElegido.id}`)
-      div.innerHTML += `
+  productosElegidos.forEach((productoElegido) => {
+    const div = document.createElement("div");
+    div.classList.add("contenido-modal-producto");
+    div.setAttribute("id",`${productoElegido.id}`)
+    div.innerHTML += `
       <img src="${productoElegido.imagenes.frontal}" alt="">
       <h5 class="titulo-contenido">${productoElegido.titulo}</h5>
       <p class="precio-contenido">${productoElegido.precio}</p>
       `
       contenedorProductos.appendChild(div);
+      console.log(productoElegido);
+    });
+    
+  }
+  
+  
+  async function seleccionCategoria(e){
+    categoriaOculto = e.target.id;
+    const response = await fetch(`${URLProductos}`);
+    const datas = await response.json();
+    
+    if(e.target.id === "todo"){
+      generOculto = "";
+      cargarProductos(datas)
+      return;
+    }
+    
+    categorias.forEach(categoria => categoria.classList.remove("activo"));
+    e.target.classList.add("activo");
+    
+    const productosBtn = datas.filter(data => {
+      if(generOculto.length > 0){
+        return data.categoria.id === e.target.id && data.genero.id === generOculto;
+      }
+      
+      return data.categoria.id === e.target.id;
+      
+    });
+    
+    // console.log(productosBtn);
+    cargarProductos(productosBtn);
+  }
+  
+  
+  async function seleccionGenero(e){
+    generOculto = e.target.id;
+    const response = await fetch(`${URLProductos}`);
+    const datas = await response.json();
+    
+    if(categoriaOculto === "todo"){
+      categoriaOculto = "";
+    } 
+    
+    
+    generos.forEach(genero => genero.classList.remove("activo"));
+    e.target.classList.add("activo");
+    
+    const generosBtn = datas.filter(data => {
+      if(categoriaOculto.length > 0){
+        return data.genero.id === e.target.id && data.categoria.id === categoriaOculto; 
+      } 
+      
+      return data.genero.id === e.target.id;
+      
+    })
+    console.log(generosBtn);
+    cargarProductos(generosBtn);
+    
+  }
+  
+  async function selectProduct(id){
+    //Cerrar el modal
+    document.querySelector("#cerrar").click()
+    //Pintar pagina principal
+    const response = await fetch(`${URLProductos}/${id}`);
+    const data = await response.json();
+    
+    document.querySelector(".Nombre").textContent = data.titulo;
+    document.querySelector(".precio").textContent = data.precio;
+    document.querySelector(".imgPrincipal").src = data.imagenes.frontal;
+    document.querySelector("#A").src = data.imagenes.frontal;
+    document.querySelector("#B").src = data.imagenes.trasera;
+    document.querySelector("#C").src = data.imagenes.izquierda;
+    document.querySelector("#D").src = data.imagenes.derecha;
+    
+  }
+  
+  
+
+
+// modal diseño
+function cargarDiseños(productosElegidos){
+  limpiar()
+  productosElegidos.forEach((productoElegido) => {
+      const div = document.createElement("div");
+      div.classList.add("contenido-modal-diseño");
+      div.setAttribute("id",`${productoElegido.id}`)
+      div.innerHTML += `
+      <img src="${productoElegido.imagenes}" alt="">
+      `
+      contenedorDiseños.appendChild(div);
+      console.log(productoElegido);
   });
 
 }
 
-cargarProductos();
 
-
-async function seleccionCategoria(e){
-  const response = await fetch(`${URLProductos}`);
-  const data = await response.json();
-  console.log(data);
-  // categorias.forEach(categoria => categoria.classList.remove("activo"));
-  // e.target.classList.add("active");
-
-  // const productosBtn = productos.filter(producto => producto.categoria.id === e.target.id)
-  // cargarProductos(productosBtn);
-
+async function seleccionCategoriaDiseño(e){
+  categoriaOculto = e.target.id;
+  const response = await fetch(`${URLDiseños}`);
+  const datas = await response.json();
   
-}
-
-
-function seleccionGenero(e){
-  generos.forEach(genero => genero.classList.remove("activo"));
+  if(e.target.id === "todo"){
+    generOculto = "";
+    cargarDiseños(datas)
+    return;
+  }
+  
+  categoriaDiseños.forEach(categoriaDiseño => categoriaDiseño.classList.remove("activo"));
   e.target.classList.add("activo");
-  const generoBtn = productos.filter(producto => producto.genero.id === e.target.id)
-
-  const generoSeleccionado = e.target.id
-;
-  if(generoSeleccionado == "femenino"){
   
-
-   }
- if(generoSeleccionado == "masculino"){
-
- }
- cargarProductos(generoBtn)  
+  const diseñosBtn = datas.filter(data => {
+    return data.categoria.id === e.target.id; 
+  });
   
-}
-
-async function selectProduct(id){
-  //Cerrar el modal
-  document.querySelector("#cerrar").click()
-  //Pintar pagina principal
-  const response = await fetch(`${URLProductos}/${id}`);
-  const data = await response.json();
-
-  document.querySelector(".Nombre").textContent = data.titulo;
-  document.querySelector(".precio").textContent = data.precio;
-  document.querySelector(".imgPrincipal").src = data.imagenes.frontal;
-  document.querySelector("#A").src = data.imagenes.frontal;
-  document.querySelector("#B").src = data.imagenes.trasera;
-  document.querySelector("#C").src = data.imagenes.izquierda;
-  document.querySelector("#D").src = data.imagenes.derecha;
-
-
-
-
+  // console.log(productosBtn);
+  cargarDiseños(diseñosBtn)
 }
 
 function limpiar (){
-  while (contenedorProductos.firstChild) {
-      contenedorProductos.removeChild(contenedorProductos.firstChild)
+  while (contenedorDiseños.firstChild) {
+    contenedorDiseños.removeChild(contenedorDiseños.firstChild)
   }
 }
-
-
-
 
 
 

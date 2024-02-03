@@ -161,10 +161,11 @@ function limpiarProducto (){
 }
   
 
-// --------------- MODAL DE LOS PRODUCTOS ---------------
+// --------------- MODAL DE LOS DISEÑOS ---------------
 // SELECTORES
 const contenedorDiseños = document.querySelector("#contenedorDiseños");
 const categoriaDiseños = document.querySelectorAll(".categoria-diseños");
+// const contenedorDragAndDrop = document.querySelector(".contenedor-drag-and-drop");
 
 
 // EVENTOS
@@ -172,13 +173,20 @@ categoriaDiseños.forEach(categoriaDiseño => {
   categoriaDiseño.addEventListener("click", seleccionCategoriaDiseño)
 });
 
+contenedorDiseños.addEventListener("click", e =>{
+  e.preventDefault();
+  if (e.target.classList.contains("contenido-modal-diseño")){
+    selectDiseño(e.target.getAttribute("id"))
+  }
+});
+
 
 // FUNCIONES
-// 1. funcion para mostrar los productos.
+// 1. funcion para mostrar los diseños.
 function cargarDiseños(productosElegidos){
   // Funcion para evitar que se duplique las cartas.
   limpiarDiseño()
-  // Recorrer los productos e inyectar la informacion.
+  // Recorrer los diseños e inyectar la informacion.
   productosElegidos.forEach((productoElegido) => {
       const div = document.createElement("div");
       div.classList.add("contenido-modal-diseño");
@@ -191,7 +199,7 @@ function cargarDiseños(productosElegidos){
   });
 }
 
-// 3. funcion para seleccionar por genero.
+// 3. funcion para seleccionar por categoria.
 async function seleccionCategoriaDiseño(e){
   categoriaOculto = e.target.id;
 
@@ -199,7 +207,7 @@ async function seleccionCategoriaDiseño(e){
   const response = await fetch(`${URLDiseños}`);
   const datas = await response.json();
   
-  // Condicional para eliminar el contido de genero.
+  // Condicional para eliminar mostrar todo.
   if(e.target.id === "todo"){
     cargarDiseños(datas)
     return;
@@ -211,11 +219,26 @@ async function seleccionCategoriaDiseño(e){
   // Filtrar por categoria.
   const diseñosBtn = datas.filter(data => data.categoria.id === e.target.id);
   
-  // console.log(productosBtn);
+  // console.log(diseñosBtn);
   cargarDiseños(diseñosBtn)
 }
 
-// 4. funcion para limpiar.
+// 4. funcion para seleccionar el producto y sobrescribir la info.
+async function selectDiseño(id){
+  //Cerrar el modal
+  document.querySelector("#salir
+  ").click()
+
+  // Consumir el json server.
+  const response = await fetch(`${URLDiseños}/${id}`);
+  const data = await response.json();
+  
+  //Pintar pagina principal
+  document.querySelector("#E").src = data.imagenes;
+  
+}
+
+// 5. funcion para limpiar.
 function limpiarDiseño (){
   while (contenedorDiseños.firstChild) {
     contenedorDiseños.removeChild(contenedorDiseños.firstChild)

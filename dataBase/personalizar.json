@@ -293,7 +293,6 @@
             "precio": "$85.000"
         }
     ],
-
     "diseños": [
         {
             "id": "amor-01",
@@ -327,7 +326,6 @@
                 "id": "amor"
             }
         },
-
         {
             "id": "formas-01",
             "imagenes": "https://image.spreadshirtmedia.net/image-server/v1/designs/5235709,height=150.png",
@@ -360,7 +358,6 @@
                 "id": "formas"
             }
         },
-
         {
             "id": "deportes-01",
             "imagenes": "https://image.spreadshirtmedia.net/image-server/v1/designs/140390165,height=150.png",
@@ -393,7 +390,6 @@
                 "id": "deportes"
             }
         },
-
         {
             "id": "animales-01",
             "imagenes": "https://image.spreadshirtmedia.net/image-server/v1/designs/137802277,height=150.png",
@@ -426,7 +422,6 @@
                 "id": "animales"
             }
         },
-
         {
             "id": "divertido-01",
             "imagenes": "https://image.spreadshirtmedia.net/image-server/v1/designs/141673290,height=150.png",
@@ -459,7 +454,6 @@
                 "id": "divertido"
             }
         },
-
         {
             "id": "mensajes-01",
             "imagenes": "https://image.spreadshirtmedia.net/image-server/v1/designs/143176014,height=150.png",

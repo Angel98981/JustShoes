@@ -82,10 +82,30 @@ header{
     width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-top: 20px;
 }
 
+
+.contenedor-drag-and-drop {
+    position: absolute;
+    width: 18%; 
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8c8c8c;
+}
+.imagen-diseño {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-diseño img {
+    width: 50%;
+}
 
 /* seccion de las opciones para personalizar */
 .opciones-personalizar {

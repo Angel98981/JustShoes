@@ -32,7 +32,8 @@ const urlProductos = "http://localhost:4003/productos";
 export const tenerDatos = async () => {
   try {
     const respuesta = await fetch(urlProductos);
-    const datos = await respuesta.json();    
+    const datos = await respuesta.json();
+     
     return datos;
   } catch (error) {
     console.log(error);

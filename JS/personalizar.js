@@ -166,8 +166,6 @@ function limpiarProducto (){
 const contenedorDiseños = document.querySelector("#contenedorDiseños");
 const categoriaDiseños = document.querySelectorAll(".categoria-diseños");
 const vistaPrincipal = document.querySelector(".vista-elegida");
-// const contenedorDragAndDrop = document.querySelector(".contenedor-drag-and-drop");
-
 
 // EVENTOS
 categoriaDiseños.forEach(categoriaDiseño => {
@@ -245,21 +243,25 @@ async function selectDiseño(id){
       </button>
     </div>
     `;
-
-  
     vistaPrincipal.appendChild(div);
-    const botonEliminar = document.querySelector(".eliminar-diseño");
-  
-    botonEliminar.addEventListener("click", ()=>{
-      const contenedroDragDrop = document.querySelector(".contenedor-drag-and-drop");
-      if(contenedroDragDrop){
-        console.log(contenedroDragDrop);
-        contenedroDragDrop.remove(contenedroDragDrop);
-      }
 
-    });
+    eliminarDiseño()
   }
   
+
+}
+
+// 5. eliminar el diseño
+function eliminarDiseño(){
+  const botonEliminar = document.querySelector(".eliminar-diseño");
+  const contenedorDragDrop = document.querySelector(".contenedor-drag-and-drop");
+
+  botonEliminar.addEventListener("click", () =>{
+    if (contenedorDragDrop ) {
+      contenedorDragDrop.remove()
+    }
+  });
+
 }
 
 

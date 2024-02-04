@@ -102,7 +102,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #c5bcc0; */
+    border: 1px solid #c5bcc0;
 }
 
 .imagen-diseño img {

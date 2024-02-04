@@ -87,7 +87,6 @@ header{
     margin-top: 20px;
 }
 
-
 .contenedor-drag-and-drop {
     position: absolute;
     width: 18%; 
@@ -97,15 +96,29 @@ header{
     align-items: center;
     border: 1px solid #8c8c8c;
 }
+
 .imagen-diseño {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid #c5bcc0; */
 }
+
 .imagen-diseño img {
     width: 50%;
+    margin: 10px;
 }
+
+.eliminar-diseño {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    width: 55px;
+    margin-right: 178px;
+    margin-bottom: 102px;
+}
+
 
 /* seccion de las opciones para personalizar */
 .opciones-personalizar {

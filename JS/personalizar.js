@@ -165,6 +165,7 @@ function limpiarProducto (){
 // SELECTORES
 const contenedorDiseños = document.querySelector("#contenedorDiseños");
 const categoriaDiseños = document.querySelectorAll(".categoria-diseños");
+const vistaPrincipal = document.querySelector(".vista-elegida");
 // const contenedorDragAndDrop = document.querySelector(".contenedor-drag-and-drop");
 
 
@@ -190,7 +191,7 @@ function cargarDiseños(productosElegidos){
   productosElegidos.forEach((productoElegido) => {
       const div = document.createElement("div");
       div.classList.add("contenido-modal-diseño");
-      div.setAttribute("id",`${productoElegido.id}`)
+      div.setAttribute("id",`${productoElegido.id}`);
       div.innerHTML += `
       <img src="${productoElegido.imagenes}" alt="">
       `
@@ -226,17 +227,41 @@ async function seleccionCategoriaDiseño(e){
 // 4. funcion para seleccionar el producto y sobrescribir la info.
 async function selectDiseño(id){
   //Cerrar el modal
-  document.querySelector("#salir
-  ").click()
+  document.querySelector("#salir").click()
 
   // Consumir el json server.
   const response = await fetch(`${URLDiseños}/${id}`);
   const data = await response.json();
   
-  //Pintar pagina principal
-  document.querySelector("#E").src = data.imagenes;
+  if(data.imagenes){
+    const div = document.createElement("div");
+    div.classList.add("contenedor-drag-and-drop");
+    div.setAttribute("id", `${data.id}`);
+    div.innerHTML += `
+    <div class="imagen-diseño">
+      <img src="${data.imagenes}" alt="">
+      <button class="eliminar-diseño" id="${data.id}">
+        <img src="../img/personalizar/x-circle-solid-204.png" alt="">
+      </button>
+    </div>
+    `;
+
+  
+    vistaPrincipal.appendChild(div);
+    const botonEliminar = document.querySelector(".eliminar-diseño");
+  
+    botonEliminar.addEventListener("click", ()=>{
+      const contenedroDragDrop = document.querySelector(".contenedor-drag-and-drop");
+      if(contenedroDragDrop){
+        console.log(contenedroDragDrop);
+        contenedroDragDrop.remove(contenedroDragDrop);
+      }
+
+    });
+  }
   
 }
+
 
 // 5. funcion para limpiar.
 function limpiarDiseño (){

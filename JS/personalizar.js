@@ -180,6 +180,7 @@ contenedorDiseños.addEventListener("click", e =>{
 });
 
 
+
 // FUNCIONES
 // 1. funcion para mostrar los diseños.
 function cargarDiseños(productosElegidos){
@@ -194,7 +195,7 @@ function cargarDiseños(productosElegidos){
       <img src="${productoElegido.imagenes}" alt="">
       `
       contenedorDiseños.appendChild(div);
-      console.log(productoElegido);
+      // console.log(productoElegido);
   });
 }
 
@@ -223,32 +224,79 @@ async function seleccionCategoriaDiseño(e){
 }
 
 // 4. funcion para seleccionar el producto y sobrescribir la info.
-async function selectDiseño(id){
+async function selectDiseño(id) {
   //Cerrar el modal
-  document.querySelector("#salir").click()
+  document.querySelector("#salir").click();
 
   // Consumir el json server.
   const response = await fetch(`${URLDiseños}/${id}`);
   const data = await response.json();
-  
-  if(data.imagenes){
+
+  // condicional para agregar el contenedor y contenido del diseño
+  if (data.imagenes) {
     const div = document.createElement("div");
     div.classList.add("contenedor-drag-and-drop");
-    div.setAttribute("id", `${data.id}`);
-    div.innerHTML += `
-    <div class="imagen-diseño">
+    div.setAttribute("draggable", "true");
+    
+    const imagenDiseñoDiv = document.createElement("div");
+    imagenDiseñoDiv.classList.add("imagen-diseño");
+    imagenDiseñoDiv.setAttribute("id", `${data.id}`);
+    
+    imagenDiseñoDiv.innerHTML += `
       <img src="${data.imagenes}" alt="">
-      <button class="eliminar-diseño" id="${data.id}">
+      <button class="eliminar-diseño" ">
         <img src="../img/personalizar/x-circle-solid-204.png" alt="">
       </button>
-    </div>
     `;
+    
+    // agregar elementos
+    div.appendChild(imagenDiseñoDiv);
     vistaPrincipal.appendChild(div);
 
-    eliminarDiseño()
+    // llamar funciones
+    eliminarDiseño();
+    draggable(imagenDiseñoDiv);
   }
-  
+}
 
+// 5. funcion para mover el contenido
+function draggable(element) {
+  let posicionX, posicionY;
+
+  // evento que escucha cuando se da click
+  element.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+
+    // variable que guarda la posicion del mouse y del elemento
+    posicionX = e.clientX - element.getBoundingClientRect().left;
+    posicionY = e.clientY - element.getBoundingClientRect().top;
+
+    // evento que escucha cuando se mueve y cuando suelta
+    document.addEventListener("mousemove", moverDrag);
+    document.addEventListener("mouseup", () => {
+      document.removeEventListener("mousemove", moverDrag);
+    });
+  });
+
+  // funcion para mover el elemento
+  function moverDrag (e) {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    // Limitar el movimiento al contenedor
+    const contenedorDrag= element.parentElement.getBoundingClientRect();
+
+    // constante con la nueva posicion
+    const posicionLeft = mouseX - posicionX - contenedorDrag.left;
+    const posicionTop = mouseY - posicionY - contenedorDrag.top;
+
+    // Verificar los límites del contenedor
+    if (posicionLeft >= 0 && posicionLeft + element.clientWidth <= contenedorDrag.width &&
+        posicionTop >= 0 && posicionTop + element.clientHeight <= contenedorDrag.height) {
+      element.style.left = `${posicionLeft}px`;
+      element.style.top = `${posicionTop}px`;
+    }
+  }
 }
 
 // 5. eliminar el diseño
@@ -265,7 +313,7 @@ function eliminarDiseño(){
 }
 
 
-// 5. funcion para limpiar.
+// 6. funcion para limpiar.
 function limpiarDiseño (){
   while (contenedorDiseños.firstChild) {
     contenedorDiseños.removeChild(contenedorDiseños.firstChild)

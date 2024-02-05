@@ -31,7 +31,17 @@ function nombreLogout() { // toda essta funcion es para que el nombre del usuari
 
 
 const añadirCarrito = document.querySelector("#añadirCarrito")
-añadirCarrito.addEventListener("click", añadirAlCarrito)
+añadirCarrito.addEventListener("click", ()=>{
+  añadirAlCarrito()
+  const storedProductId = localStorage.getItem("productId"); // aca estoy obteniendo el id del producto que esta guardado en local storage
+  if (storedProductId) {
+    const carritoIds = JSON.parse(localStorage.getItem("carritoIds")) || [];
+    carritoIds.push(storedProductId);
+
+    localStorage.setItem("carritoIds", JSON.stringify(carritoIds));
+    getIdProduct(storedProductId)  
+  }
+})
 
 let contador = 0
 
@@ -40,16 +50,13 @@ function añadirAlCarrito() { // esta funcion aun no esta bien, si funciona pero
   console.log(contador);
   const contadorCarrito = document.querySelector("#contadorCarrito")
   contadorCarrito.textContent=contador
-
-  
-
 }
 
 function injectImg() {
   const storedProductId = localStorage.getItem("productId"); // aca estoy obteniendo el id del producto que esta guardado en local storage
   if (storedProductId) {
     console.log("ID del producto almacenado:", storedProductId);
-    insertImg(storedProductId); //se le pasa el parametro del id para que se ejecute bien la funcion 
+    insertImg(storedProductId); //se le pasa el parametro del id para que se ejecute bien la funcion    
   }
 }
 
@@ -73,12 +80,30 @@ async function insertImg(productId) {
     if (productoEncontrado) {       
       imgPrincipal.innerHTML = `<img width="650px"; src="${productoEncontrado.imgPrincipal}">`;    // inyecto dinamicamente las fotos de los productos 
       return; 
-    }
+    }   
     
   });
   
 }
+async function getIdProduct(idproducto) {
+  const productos = await tenerDatos(); //se le pone asyn await para que no me traiga la promesa vacia 
 
+  productos.forEach((producto) => {
+    const {
+      zapatos,
+      sacos,
+      pantalones,
+      implementos,
+      camisas,
+      bolsos,
+      accesorios,
+    } = producto; //destructuracion de base de datos
+
+    const categoriaActual = [...zapatos, ...sacos, ...pantalones, ...implementos, ...camisas, ...bolsos, ...accesorios]; //aqui concateno toda mi base de datos, para luego con .find buscar de manera mas sencilla 
+    const productoEncontrado = categoriaActual.find(item => item.id == idproducto);
+    console.log(productoEncontrado);
+})
+}
 
 
 

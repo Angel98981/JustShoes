@@ -36,89 +36,13 @@
         <div id="logout" class="deactivate"><button id="closeSesion" class="btn btn-outline-info">Logout</button></div>
       </div>
     </header>
+    <h2>Carrito de Compras</h2>
     <section class="compra-slider">
       <div class="carrito">
-        <h2>Carrito de Compras</h2>
-        <hr />
-        <div class="producto">
-          <img
-            class="imgProducto"
-            src="https://cdn.leonardo.ai/users/8617ca28-ca37-47f6-8c4d-eebbee47c576/generations/ed7b6036-3517-401a-8641-f8ed4be75694/variations/Default_generate_me_a_logo_for_a_sports_clothing_sales_project_0_ed7b6036-3517-401a-8641-f8ed4be75694_0.png"
-            alt=""
-          />
-          <div class="o">
-            <div class="nameProduct">
-              <h2>Nombre</h2>
-              <a href="">
-                <span class="material-symbols-outlined"> delete </span>
-              </a>
-            </div>
-
-            <p>Especificacion genero</p>
-            <p>Detalles</p>
-            <div class="talla-cant">
-              <p>
-                Talla
-                <select id="tallas" name="tallas">
-                  <option value="36">36</option>
-                  <option value="37">37</option>
-                  <option value="38">38</option>
-                  <option value="39">39</option>
-                  <option value="40">40</option>
-                  <option value="41">41</option>
-                  <option value="42">42</option>
-                </select>
-              </p>
-              <p>
-                Cantidad
-                <select id="tallas" name="tallas">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                </select>
-              </p>
-            </div>
-            <strong>Precio</strong>
-          </div>
-        </div>
-      </div>
-      <div class="cajaPedido">
-        <h2>Resumen del pedido</h2>
-        <div class="alinearText">
-          <p>X Producto</p>
-          <p>$XXX.XXX</p>
-        </div>
-        <hr />
-        <div class="alinearText">
-          <p>Entrega</p>
-          <p>Gratis</p>
-        </div>
-        <hr />
-        <div class="alinearText">
-          <p>Descuento</p>
-          <p>$XXX.XXX</p>
-        </div>
-        <hr />
-        <div class="alinearText">
-          <p>Total</p>
-          <p>$XXX.XXX</p>
-        </div>
-        <hr />
-        <div class="pagar">
-          <button class="btn btn-dark ">Pagar</button>
-        </div>
-        <div class="formasPago">
-          <p>Formas de pago aceptadas</p>
-          <div class="pagos">
-            <img src="../img/pse-forma.jpg" alt="pse" width="50px"/>
-            <img src="../img/1200x600wa.png" alt="efecty" width="50px" />
-            <img src="../img/paypal.png" alt="paypal" width="50px"/>
-          </div>
-        </div>
+        <!-- aqui se inserta dinamicamente las cosas -->
+      </div> 
+      <div class="cajaPedido">        
+      
       </div>
       <!-- Espacio para el metodo de pago-->
     </section>
@@ -307,6 +231,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../JS/cart.js"></script>
+    <script src="../JS/cart.js" type="module"></script>
   </body>
 </html>

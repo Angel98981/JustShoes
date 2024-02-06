@@ -322,6 +322,65 @@ function limpiarDiseño (){
 
 
 
+// --------------- MODAL DE LAS IMAGENES ---------------
+// SELECTORES
+const contenedorImagenes = document.querySelector("#contenedor-imagenes");
+const subirFotos = document.querySelector("#subir-foto");
+const error = document.querySelector("#error");
+
+
+
+// EVENTOS
+document.addEventListener("DOMContentLoaded", () => {
+  // Código que se ejecutará cuando el DOM esté completamente cargado.
+  error.innerHTML = "";
+});
+
+// evento donde se activa cuando el valor de un elemento de formulario cambia.
+subirFotos.addEventListener("change", () => {
+  Array.from(subirFotos.files).forEach((file) => {
+    fileHandler(file, file.type);
+  });
+});
+
+
+
+// FUNCIONES
+
+// 1. Funcion para subir las imagenes.
+function fileHandler (file, type)  {
+  
+  // verificando si el el archivo es una imagen.
+  if (type.split("/")[0] !== "image") {
+    error.innerText = "Por favor ingrese una foto";
+    return false;
+  }
+  
+  error.innerText = "";
+
+  const imagenContenedor = document.createElement("div");
+  imagenContenedor.className = "contenido-modal-diseño";
+
+  const img = document.createElement("img");
+  img.src = URL.createObjectURL(file);
+
+  imagenContenedor.appendChild(img);
+  contenedorImagenes.appendChild(imagenContenedor);
+};
+
+// 2. Funcion para seleccionar una imagen
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

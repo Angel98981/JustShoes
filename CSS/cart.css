@@ -116,6 +116,9 @@ header{
     display: flex;
     justify-content: center;       
 }
+.imagen-pagos{
+    margin-right: 15px;
+}
 .pagar button{
     width: 100%;     
 }

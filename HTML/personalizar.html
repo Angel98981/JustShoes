@@ -43,15 +43,9 @@
           alt="" width="140%">
 
         <!-- aqui va el contenido del diseño seleccionado -->
+        <!-- aqui va el contenido de la imagen seleccionada -->
 
-        <!-- <div class="contenedor-drag-and-drop">
-            <div class="imagen-diseño">
-              <img id="E" src="https://image.spreadshirtmedia.net/image-server/v1/designs/16989706,height=150.png" alt="">
-              <button class="eliminar-diseño">
-                <img src="../img/personalizar/x-circle-solid-204.png" alt="">
-              </button>
-            </div>
-          </div> -->
+
 
       </div>
 
@@ -200,32 +194,18 @@
               <h3 class="modal-titulo-producto">
                 Carga tu imagen aquí
               </h3>
+
               <!-- Input de tipo file oculto -->
-              <input type="file" id="fileInput" name="archivo" accept=".png, .svg">
-              <label for="fileInput" class="custom-file-input">Seleccionar Archivo</label>
+              <input type="file" id="subir-foto" name="archivo" accept=".png, .svg" multiple accept="image/*">
+              <label for="subir-foto" class="boton-subir">Selecciona el Archivo</label>
               <hr class="linea">
               <p class="derechos">Al importar el archivo, confirmo que tengo los derechos de autor o la licencia para
                 usarlo.</p>
+              <div id="error"></div>
             </div>
-
-            <div class="modal-main">
-              <div class="contenido-imagen">
-                <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-              </div>
-              <div class="contenido-imagen">
-                <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-              </div>
-              <div class="contenido-imagen">
-                <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-              </div>
-              <div class="contenido-imagen">
-                <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-              </div>
-              <div class="contenido-imagen">
-                <img src="../img/personalizar/1,width=800,height=800.png" alt="">
-              </div>
-              <div class="contenido-imagen">
-                <img src="../img/personalizar/1,width=800,height=800.png" alt="">
+            <div id="contenedor-imagenes" class="modal-main">
+              <div class="image-display">
+                <!-- aqui se agrega la imagen-->
               </div>
             </div>
           </div>

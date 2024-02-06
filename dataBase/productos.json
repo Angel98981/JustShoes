@@ -3,39 +3,54 @@
     {
       "zapatos": [
         {
-          "id":1,
+          "id": 1,
           "nombre": "Nike Air Max Plus III",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Hombre/Nike-Air-Max-Plus-III/air-max-plus-iii-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/zapatos/Hombre/Nike-Air-Max-Plus-III/air-max-plus-iii-2.png",
+          "imgTer": "../img/Productos/zapatos/Hombre/Nike-Air-Max-Plus-III/air-max-plus-iii-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
-          "id":2,
+          "id": 2,
           "nombre": "Nike Dunk Low Retro",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Hombre/Nike-Dunk-Low-Retro/dunk-low-retro-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/zapatos/Hombre/Nike-Dunk-Low-Retro/dunk-low-retro-2.png",
+          "imgTer": "../img/Productos/zapatos/Hombre/Nike-Dunk-Low-Retro/dunk-low-retro-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
-          "id":3,
+          "id": 3,
           "nombre": "Nike Mercurial Superfly 9 Academy",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Hombre/Nike-Mercurial-Superfly-9-Academy/mercurial-superfly-9-academy-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/zapatos/Hombre/Nike-Mercurial-Superfly-9-Academy/mercurial-superfly-9-academy-2.png",
+          "imgTer": "../img/Productos/zapatos/Hombre/Nike-Mercurial-Superfly-9-Academy/mercurial-superfly-9-academy-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
-          "id":4,
+          "id": 4,
           "nombre": "Nike Air Force 1 '07 EasyOn",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Mujer/Nike-Air-Force-1-'07-EasyOn/air-force-1-07-easyon-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/zapatos/Mujer/Nike-Air-Force-1-'07-EasyOn/air-force-1-07-easyon-2.png",
+          "imgTer": "../img/Productos/zapatos/Mujer/Nike-Air-Force-1-'07-EasyOn/air-force-1-07-easyon-3.png",
+          "genero": "mujer",
+          "precio": 23000
         },
         {
-          "id":5,
+          "id": 5,
           "nombre": "Nike V2K Run",
           "tipo": "zapato",
           "imgPrincipal": "../img/Productos/zapatos/Mujer/Nike-V2K-Run/v2k-run-zapatillas-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/zapatos/Mujer/Nike-V2K-Run/v2k-run-zapatillas-2.png",
+          "imgTer": "../img/Productos/zapatos/Mujer/Nike-V2K-Run/v2k-run-zapatillas-3.png",
+          "genero": "mujer",
+          "precio": 23000
         }
       ],
       "sacos": [
@@ -43,31 +58,46 @@
           "id": 6,
           "nombre": "Brooklyn Fleece",
           "imgPrincipal": "../img/Productos/sacos/Hombres/Brooklyn-Fleece/brooklyn-fleece-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/sacos/Hombres/Brooklyn-Fleece/brooklyn-fleece-2.png",
+          "imgTer": "../img/Productos/sacos/Hombres/Brooklyn-Fleece/brooklyn-fleece-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 7,
           "nombre": "Sportswear",
           "imgPrincipal": "../img/Productos/sacos/Hombres/Sportswear/sportswear-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/sacos/Hombres/Sportswear/sportswear-2.png",
+          "imgTer": "../img/Productos/sacos/Hombres/Sportswear/sportswear-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 8,
           "nombre": "Tech Fleece",
           "imgPrincipal": "../img/Productos/sacos/Hombres/Tech-Fleece/tech-fleece-1.jpeg",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/sacos/Hombres/Tech-Fleece/tech-fleece-2.jpeg",
+          "imgTer": "../img/Productos/sacos/Hombres/Tech-Fleece/tech-fleece-3.jpeg",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 9,
           "nombre": "Phoenix Fleece",
           "imgPrincipal": "../img/Productos/sacos/mujeres/Phoenix-Fleece/Phoenix-Fleece-1.jpeg",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/sacos/mujeres/Phoenix-Fleece/Phoenix-Fleece-2.jpeg",
+          "imgTer": "../img/Productos/sacos/mujeres/Phoenix-Fleece/Phoenix-Fleece-3.jpeg",
+          "genero": "mujer",
+          "precio": 23000
         },
         {
           "id": 10,
           "nombre": "Sportswear",
           "imgPrincipal": "../img/Productos/sacos/mujeres/Sportswear/sportswear-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/sacos/mujeres/Sportswear/sportswear-2.png",
+          "imgTer": "../img/Productos/sacos/mujeres/Sportswear/sportswear-3.png",
+          "genero": "mujer",
+          "precio": 23000
         }
       ],
       "camisas": [
@@ -75,31 +105,46 @@
           "id": 11,
           "nombre": "Baloncesto-Max90",
           "imgPrincipal": "../img/Productos/camisas/Hombres/baloncesto-Max90/max90-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/camisas/Hombres/baloncesto-Max90/max90-2.png",
+          "imgTer": "../img/Productos/camisas/Hombres/baloncesto-Max90/max90-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 12,
           "nombre": "Pro",
           "imgPrincipal": "../img/Productos/camisas/Hombres/pro/pro-camiseta-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/Productos/camisas/Hombres/pro/pro-camiseta-2.png",
+          "imgTer": "../img/Productos/camisas/Hombres/pro/pro-camiseta-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 13,
           "nombre": "Nike Crop Top",
           "imgPrincipal": "../img/Productos/camisas/Mujeres/Nike-Crop-Top/crop-top-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/camisas/Mujeres/Nike-Crop-Top/crop-top-2.png",
+          "imgTer": "../img/Productos/camisas/Mujeres/Nike-Crop-Top/crop-top-3.png",
+          "genero": "mujer",
+          "precio": 23000
         },
         {
           "id": 14,
           "nombre": "Nike-Swoosh",
           "imgPrincipal": "../img/Productos/camisas/Mujeres/Nike-Swoosh/swoosh-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/camisas/Mujeres/Nike-Swoosh/swoosh-2.png",
+          "imgTer": "../img/Productos/camisas/Mujeres/Nike-Swoosh/swoosh-3.png",
+          "genero": "mujer",
+          "precio": 23000
         },
         {
           "id": 15,
           "nombre": "Nike-Zenvy",
           "imgPrincipal": "../img/Productos/camisas/Mujeres/Nike-Zenvy/zenvy-1.jpeg",
-          "genero": "mujer"
+          "imgSec": "../img/Productos/camisas/Mujeres/Nike-Zenvy/zenvy-2.jpeg",
+          "imgTer": "../img/Productos/camisas/Mujeres/Nike-Zenvy/zenvy-3.jpeg",
+          "genero": "mujer",
+          "precio": 23000
         }
       ],
       "pantalones": [
@@ -107,99 +152,154 @@
           "id": 16,
           "nombre": "Dri-FIT",
           "imgPrincipal": "../img/productos/pantalones/hombres/Dri-FIT/dri-fit-1.jpeg",
-          "genero": "hombre"
+          "imgSec": "../img/productos/pantalones/hombres/Dri-FIT/dri-fit-2.jpeg",
+          "imgTer": "../img/productos/pantalones/hombres/Dri-FIT/dri-fit-3.jpeg",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 17,
           "nombre": "Jogger fleece",
           "imgPrincipal": "../img/productos/pantalones/hombres/Jogger-fleece/fleece-jogger-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/productos/pantalones/hombres/Jogger-fleece/fleece-jogger-2.png",
+          "imgTer": "../img/productos/pantalones/hombres/Jogger-fleece/fleece-jogger-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 18,
           "nombre": "Woven",
           "imgPrincipal": "../img/productos/pantalones/hombres/Woven/woven-1.png",
-          "genero": "hombre"
+          "imgSec": "../img/productos/pantalones/hombres/Woven/woven-2.png",
+          "imgTer": "../img/productos/pantalones/hombres/Woven/woven-3.png",
+          "genero": "hombre",
+          "precio": 23000
         },
         {
           "id": 19,
           "nombre": "Dri-FIT",
           "imgPrincipal": "../img/productos/pantalones/mujeres/Dri-FIT-Mujer/dri-fit-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/productos/pantalones/mujeres/Dri-FIT-Mujer/dri-fit-2.png",
+          "imgTer": "../img/productos/pantalones/mujeres/Dri-FIT-Mujer/dri-fit-3.png",
+          "genero": "mujer",
+          "precio": 23000
         },
         {
           "id": 20,
           "nombre": "Leggings-ONE",
           "imgPrincipal": "../img/productos/pantalones/mujeres/Leggings-ONE/one-1.png",
-          "genero": "mujer"
+          "imgSec": "../img/productos/pantalones/mujeres/Leggings-ONE/one-2.png",
+          "imgTer": "../img/productos/pantalones/mujeres/Leggings-ONE/one-3.png",
+          "genero": "mujer",
+          "precio": 23000
         }
       ],
       "implementos": [
         {
           "id": 21,
           "nombre": "Cinturon",
-          "imgPrincipal": "../img/productos/implementos/cinturon-1.jpeg"
+          "imgPrincipal": "../img/productos/implementos/cinturon-1.jpeg",
+          "imgSec": "../img/productos/implementos/cinturon-2.jpeg",
+          "imgTer": "../img/productos/implementos/cinturon-3.jpeg",
+          "precio": 23000
         },
         {
           "id": 22,
           "nombre": "Flow",
-          "imgPrincipal": "../img/productos/implementos/flow-1.png"
+          "imgPrincipal": "../img/productos/implementos/flow-1.png",
+          "imgSec": "../img/productos/implementos/flow-2.png",
+          "imgTer": "../img/productos/implementos/flow-3.png",
+          "precio": 23000
         },
         {
           "id": 23,
           "nombre": "Guantes",
-          "imgPrincipal": "../img/productos/implementos/guantes-1.png"
+          "imgPrincipal": "../img/productos/implementos/guantes-1.png",
+          "imgSec": "../img/productos/implementos/guantes-2.png",
+          "imgTer": "../img/productos/implementos/guantes-3.png",
+          "precio": 23000
         },
         {
           "id": 24,
           "nombre": "Intensity",
-          "imgPrincipal": "../img/productos/implementos/intensity-1.png"
+          "imgPrincipal": "../img/productos/implementos/intensity-1.png",
+          "imgSec": "../img/productos/implementos/intensity-2.png",
+          "imgTer": "../img/productos/implementos/intensity-3.png",
+          "precio": 23000
         }
       ],
       "bolsos": [
         {
           "id": 25,
           "nombre": "Academy",
-          "imgPrincipal": "../img/Productos/bolsos/Academy/academy-1.png"
+          "imgPrincipal": "../img/Productos/bolsos/Academy/academy-1.png",
+          "imgSec": "../img/Productos/bolsos/Academy/academy-2.png",
+          "imgTer": "../img/Productos/bolsos/Academy/academy-3.png",
+          "precio": 23000
         },
         {
           "id": 26,
           "nombre": "Brasilia",
-          "imgPrincipal": "../img/Productos/bolsos/Brasilia/brasilia-1.jpeg"
+          "imgPrincipal": "../img/Productos/bolsos/Brasilia/brasilia-1.jpeg",
+          "imgSec": "../img/Productos/bolsos/Brasilia/brasilia-2.jpeg",
+          "imgTer": "../img/Productos/bolsos/Brasilia/brasilia-3.jpeg",
+          "precio": 23000
         },
+        
         {
           "id": 27,
           "nombre": "Elemental",
-          "imgPrincipal": "../img/Productos/bolsos/Elemental/elemental-1.jpeg"
+          "imgPrincipal": "../img/Productos/bolsos/Elemental/elemental-1.jpeg",
+          "imgSec": "../img/Productos/bolsos/Elemental/elemental-2.jpeg",
+          "imgTer": "../img/Productos/bolsos/Elemental/elemental-3.jpeg",
+          "precio": 23000
         },
+        
         {
           "id": 28,
           "nombre": "Gym Club",
-          "imgPrincipal": "../img/Productos/bolsos/Gym-Club/gym-club-1.jpeg"
+          "imgPrincipal": "../img/Productos/bolsos/Gym-Club/gym-club-1.jpeg",
+          "imgSec": "../img/Productos/bolsos/Gym-Club/gym-club-2.jpeg",
+          "imgTer": "../img/Productos/bolsos/Gym-Club/gym-club-3.jpeg",
+          "precio": 23000
         },
+        
         {
           "id": 29,
           "nombre": "One Club",
-          "imgPrincipal": "../img/Productos/bolsos/one-club/one-club-1.jpeg"
+          "imgPrincipal": "../img/Productos/bolsos/one-club/one-club-1.jpeg",
+          "imgSec": "../img/Productos/bolsos/one-club/one-club-2.jpeg",
+          "imgTer": "../img/Productos/bolsos/one-club/one-club-3.jpeg",
+          "precio": 23000
         }
       ],
       "accesorios": [
         {
           "id": 30,
           "nombre": "Banda Lean Plus",
-          "imgPrincipal": "../img/Productos/accesorios/banda-Lean-Plus/lean-plus-1.png"
+          "imgPrincipal": "../img/Productos/accesorios/banda-Lean-Plus/lean-plus-1.png",
+          "imgSec": "../img/Productos/accesorios/banda-Lean-Plus/lean-plus-2.png",
+          "imgTer": "../img/Productos/accesorios/banda-Lean-Plus/lean-plus-3.png",
+          "precio": 23000
         },
         {
           "id": 31,
           "nombre": "Gorra Dri-FIT fly",
-          "imgPrincipal": "../img/Productos/accesorios/gorra-Dri-FIT-Fly/dri-fit-fly-1.png"
+          "imgPrincipal": "../img/Productos/accesorios/gorra-Dri-FIT-Fly/dri-fit-fly-1.png",
+          "imgSec": "../img/Productos/accesorios/gorra-Dri-FIT-Fly/dri-fit-fly-2.png",
+          "imgTer": "../img/Productos/accesorios/gorra-Dri-FIT-Fly/dri-fit-fly-3.png",
+          "precio": 23000
         },
         {
           "id": 32,
           "nombre": "Termo hyperFuel",
-          "imgPrincipal": "../img/Productos/accesorios/Termo-HyperFuel/hyperfuel-1.png"
+          "imgPrincipal": "../img/Productos/accesorios/Termo-HyperFuel/hyperfuel-1.png",
+          "imgSec": "../img/Productos/accesorios/Termo-HyperFuel/hyperfuel-2.png",
+          "imgTer": "../img/Productos/accesorios/Termo-HyperFuel/hyperfuel-3.png",
+          "precio": 23000
         }
       ]
     }
   ]
 }
+

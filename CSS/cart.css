@@ -72,34 +72,38 @@ header{
 }
 .producto{
     display: flex; 
-    justify-content: center;    
+    justify-content: center;        
 }
-.imgProducto{
-    width: 200px;
-}
+
 .nameProduct{    
     width: 350px;
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
 }
 .nameProduct h2{
+    margin-left: 10px;
     font-size: 25px;
     margin: 0;
 }
 
 .o p{
     margin: 0;
+    margin-left: 10px;
 }
 
 .talla-cant{
     display: flex;
-    gap: 10px;
+    gap: 10px;    
+}
+.precio{
+    margin-left: 10px;
 }
 
 /* Resumen del Pedido*/
 .cajaPedido{
     padding: 20px 50px;
-    background-color: #c5bcc0;
+    background-color: #f1f1f1;
     justify-content: center;
 }
 .cajaPedido hr{

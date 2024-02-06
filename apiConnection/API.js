@@ -33,7 +33,7 @@ export const tenerDatos = async () => {
   try {
     const respuesta = await fetch(urlProductos);
     const datos = await respuesta.json();
-     
+    console.log(datos); 
     return datos;
   } catch (error) {
     console.log(error);

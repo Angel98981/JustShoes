@@ -259,7 +259,141 @@ async function selectDiseño(id) {
   }
 }
 
-// 5. funcion para mover el contenido
+// 6. funcion para limpiar.
+function limpiarDiseño (){
+  while (contenedorDiseños.firstChild) {
+    contenedorDiseños.removeChild(contenedorDiseños.firstChild)
+  }
+}
+
+// --------------- MODAL DE LAS IMAGENES ---------------
+// SELECTORES
+const botonTexto = document.querySelector(".boton-texto");
+
+
+// EVENTOS
+botonTexto.addEventListener("click", texto);
+
+
+// FUNCIONES
+function texto (){
+  // Cerrar el modal
+  document.querySelector("#cerrado").click();
+  
+  const div = document.createElement("div");
+  div.classList.add("contenedor-drag-and-drop");
+  div.setAttribute("draggable", "true");
+
+  const inputDiv = document.createElement("div");
+  inputDiv.classList.add("imagen-diseño");
+
+  inputDiv.innerHTML += `
+    <input type="text" placeholder="Ingrese su texto"> 
+    <button class="eliminar-diseño">
+      <img src="../img/personalizar/x-circle-solid-204.png" alt="">
+    </button> 
+  `;
+  
+  
+  // agregar elementos
+  div.appendChild(inputDiv);
+  vistaPrincipal.appendChild(div);
+
+  // llamar funciones
+  eliminarDiseño();
+  draggable(inputDiv);
+}
+
+// --------------- MODAL DE LAS IMAGENES ---------------
+// SELECTORES
+const contenedorImagenes = document.querySelector("#contenedor-imagenes");
+const subirFotos = document.querySelector("#subir-foto");
+const error = document.querySelector("#error");
+
+
+// EVENTOS
+document.addEventListener("DOMContentLoaded", () => {
+  // Código que se ejecutará cuando el DOM esté completamente cargado.
+  error.innerHTML = "";
+});
+
+// evento donde se activa cuando el valor de un elemento de formulario cambia.
+subirFotos.addEventListener("change", () => {
+  Array.from(subirFotos.files).forEach((file) => {
+    fileHandler(file, file.type);
+  });
+});
+
+contenedorImagenes.addEventListener("click", e => {
+  e.preventDefault();
+  if (e.target.classList.contains("contenido-modal-diseño")) {
+    selectImagen(e.target.querySelector("img"));
+  }
+});
+
+
+// FUNCIONES
+// 1. Funcion para subir las imagenes.
+function fileHandler (file, type)  {
+  
+  // verificando si el el archivo es una imagen.
+  if (type.split("/")[0] !== "image") {
+    error.innerText = "Por favor ingrese una foto";
+    return false;
+  }
+  
+  error.innerText = "";
+
+  const imagenContenedor = document.createElement("div");
+  imagenContenedor.className = "contenido-modal-diseño";
+
+  const img = document.createElement("img");
+  img.src = URL.createObjectURL(file);
+
+  imagenContenedor.appendChild(img);
+  contenedorImagenes.appendChild(imagenContenedor);
+};
+
+// 2. funcion para seleccionar una imagen
+function selectImagen (img){
+  // Cerrar el modal
+  document.querySelector("#cerrado").click();
+
+  // condicional para agregar el contenedor y contenido de la imagen
+  if (img) {
+    const div = document.createElement("div");
+    div.classList.add("contenedor-drag-and-drop");
+    div.setAttribute("draggable", "true");
+
+    const imagenDiv = document.createElement("div");
+    imagenDiv.classList.add("imagen-diseño");
+
+    imagenDiv.innerHTML += `
+      <img src="${img.src}" alt="">
+      <button class="eliminar-diseño">
+        <img src="../img/personalizar/x-circle-solid-204.png" alt="">
+      </button>
+    `;
+
+    
+    // agregar elementos
+    div.appendChild(imagenDiv);
+    vistaPrincipal.appendChild(div);
+
+    // llamar funciones
+    eliminarDiseño();
+    draggable(imagenDiv);
+  }
+}
+
+
+
+
+
+
+
+// --------------- FUNCIONES GLOBALES ---------------
+// 1. funcion para mover el contenido
 function draggable(element) {
   let posicionX, posicionY;
 
@@ -299,7 +433,7 @@ function draggable(element) {
   }
 }
 
-// 5. eliminar el diseño
+// 2. eliminar el diseño
 function eliminarDiseño(){
   const botonEliminar = document.querySelector(".eliminar-diseño");
   const contenedorDragDrop = document.querySelector(".contenedor-drag-and-drop");
@@ -311,77 +445,6 @@ function eliminarDiseño(){
   });
 
 }
-
-
-// 6. funcion para limpiar.
-function limpiarDiseño (){
-  while (contenedorDiseños.firstChild) {
-    contenedorDiseños.removeChild(contenedorDiseños.firstChild)
-  }
-}
-
-
-
-// --------------- MODAL DE LAS IMAGENES ---------------
-// SELECTORES
-const contenedorImagenes = document.querySelector("#contenedor-imagenes");
-const subirFotos = document.querySelector("#subir-foto");
-const error = document.querySelector("#error");
-
-
-
-// EVENTOS
-document.addEventListener("DOMContentLoaded", () => {
-  // Código que se ejecutará cuando el DOM esté completamente cargado.
-  error.innerHTML = "";
-});
-
-// evento donde se activa cuando el valor de un elemento de formulario cambia.
-subirFotos.addEventListener("change", () => {
-  Array.from(subirFotos.files).forEach((file) => {
-    fileHandler(file, file.type);
-  });
-});
-
-
-
-// FUNCIONES
-
-// 1. Funcion para subir las imagenes.
-function fileHandler (file, type)  {
-  
-  // verificando si el el archivo es una imagen.
-  if (type.split("/")[0] !== "image") {
-    error.innerText = "Por favor ingrese una foto";
-    return false;
-  }
-  
-  error.innerText = "";
-
-  const imagenContenedor = document.createElement("div");
-  imagenContenedor.className = "contenido-modal-diseño";
-
-  const img = document.createElement("img");
-  img.src = URL.createObjectURL(file);
-
-  imagenContenedor.appendChild(img);
-  contenedorImagenes.appendChild(imagenContenedor);
-};
-
-// 2. Funcion para seleccionar una imagen
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

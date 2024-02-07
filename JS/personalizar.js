@@ -55,7 +55,7 @@ generos.forEach(genero => {
 
 // FUNCIONES
 // 1. funcion para mostrar los productos.
-function cargarProductos(productosElegidos){
+function  cargarProductos(productosElegidos){
   // Funcion para evitar que se duplique las cartas.
   limpiar(contenedorProductos);
 
@@ -382,10 +382,8 @@ function selectImagen (img){
 // SELECTORES
 const botonesRestar = document.querySelectorAll(".restar");
 const botonesSumar = document.querySelectorAll(".sumar");
-const btnTalla = document.querySelector(".escoger-talla-cantidad")
 
 // EVENTOS
-btnTalla.addEventListener("click")
 document.addEventListener("DOMContentLoaded", function () {
   // Seleccionar los elementos
   

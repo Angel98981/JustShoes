@@ -88,9 +88,10 @@
             <img src="../img/personalizar/subir-imagen.png" alt="">
             <p>Cargar una imagen</p>
           </button>
-          <button>
-            <p class="talla-cantidad">Escoge Talla y Cantidad</p>
+          <button data-bs-toggle="modal" data-bs-target="#modalTalla">
+            <p class="escoger-talla-cantidad">Escoge Talla y Cantidad</p>
           </button>
+
           <button type="submit">
             <img src="../img/personalizar/carrito-de-compras (1).png" alt="">
             <p>Añadir al carrito</p>
@@ -208,6 +209,62 @@
                 <!-- aqui se agrega la imagen-->
               </div>
             </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="cerrado" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal boton de la talla y cantidad
+     -->
+    <div class="modal fade" id="modalTalla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg ">
+        <div class="modal-content">
+
+          <div class="modal-body " style="overflow-y: auto;">
+            <div class="container">
+
+              <h3>Selecciona la Talla</h3>
+              <form id="miFormulario">
+                <div class="talla-cantidad">
+                  <label for="talla-s">Talla XS</label>
+                  <div class="cantidad">
+                    <button type="button" class="restar">-</button>
+                    <input type="number" id="cantidad-s" name="cantidad-s" min="0" value="0">
+                    <button type="button" class="sumar">+</button>
+                  </div>
+                </div>
+                <div class="talla-cantidad">
+                  <label for="talla-s">Talla S</label>
+                  <div class="cantidad">
+                    <button type="button" class="restar">-</button>
+                    <input type="number" id="cantidad-s" name="cantidad-s" min="0" value="0">
+                    <button type="button" class="sumar">+</button>
+                  </div>
+                </div>
+                <div class="talla-cantidad">
+                  <label for="talla-m">Talla M</label>
+                  <div class="cantidad">
+                    <button type="button" class="restar">-</button>
+                    <input type="number" id="cantidad-m" name="cantidad-m" min="0" value="0">
+                    <button type="button" class="sumar">+</button>
+                  </div>
+                </div>
+                <div class="talla-cantidad">
+                  <label for="talla-l">Talla L</label>
+                  <div class="cantidad">
+                    <button type="button" class="restar">-</button>
+                    <input type="number" id="cantidad-l" name="cantidad-l" min="0" value="0">
+                    <button type="button" class="sumar">+</button>
+                  </div>
+                </div>
+            </div>
+
+
+            </form>
           </div>
 
           <div class="modal-footer">
@@ -352,6 +409,8 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="../JS/personalizar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
 </body>
 
 </html>

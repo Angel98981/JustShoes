@@ -11,7 +11,7 @@ const imagenes = document.querySelectorAll(".imagenes");
 
 // EVENTOS
 imagenes.forEach(imagen => {
-  imagen.addEventListener("click", intercambiar )
+  imagen.addEventListener("click", intercambiar );
 });
 
 
@@ -38,18 +38,18 @@ let categoriaOculto = "";
 contenedorProductos.addEventListener("click", e =>{
   e.preventDefault();
   if (e.target.classList.contains("contenido-modal-producto")){
-    selectProduct(e.target.getAttribute("id"))
+    selectProduct(e.target.getAttribute("id"));
   }
 });
 
 
 categorias.forEach(categoria => {
-  categoria.addEventListener("click", seleccionCategoria)
+  categoria.addEventListener("click", seleccionCategoria);
 });
 
 
 generos.forEach(genero => {
-  genero.addEventListener("click", seleccionGenero)
+  genero.addEventListener("click", seleccionGenero);
 });
 
 
@@ -57,7 +57,8 @@ generos.forEach(genero => {
 // 1. funcion para mostrar los productos.
 function cargarProductos(productosElegidos){
   // Funcion para evitar que se duplique las cartas.
-  limpiarProducto()
+  limpiar(contenedorProductos);
+
   // Recorrer los productos e inyectar la informacion.
   productosElegidos.forEach((productoElegido) => {
       const div = document.createElement("div");
@@ -84,7 +85,7 @@ async function seleccionCategoria(e){
   // Condicional para eliminar el contido de genero.
   if(e.target.id === "todo"){
     generOculto = "";
-    cargarProductos(datas)
+    cargarProductos(datas);
     return;
   }
   
@@ -136,7 +137,7 @@ async function seleccionGenero(e){
 // 4. funcion para seleccionar el producto y sobrescribir la info.
 async function selectProduct(id){
   //Cerrar el modal
-  document.querySelector("#cerrar").click()
+  document.querySelector("#cerrar").click();
 
   // Consumir el json server.
   const response = await fetch(`${URLProductos}/${id}`);
@@ -153,12 +154,7 @@ async function selectProduct(id){
   
 }
 
-// 5. funcion para limpiar.
-function limpiarProducto (){
-  while (contenedorProductos.firstChild) {
-    contenedorProductos.removeChild(contenedorProductos.firstChild)
-  }
-}
+
   
 
 // --------------- MODAL DE LOS DISEÑOS ---------------
@@ -169,13 +165,13 @@ const vistaPrincipal = document.querySelector(".vista-elegida");
 
 // EVENTOS
 categoriaDiseños.forEach(categoriaDiseño => {
-  categoriaDiseño.addEventListener("click", seleccionCategoriaDiseño)
+  categoriaDiseño.addEventListener("click", seleccionCategoriaDiseño);
 });
 
 contenedorDiseños.addEventListener("click", e =>{
   e.preventDefault();
   if (e.target.classList.contains("contenido-modal-diseño")){
-    selectDiseño(e.target.getAttribute("id"))
+    selectDiseño(e.target.getAttribute("id"));
   }
 });
 
@@ -185,7 +181,7 @@ contenedorDiseños.addEventListener("click", e =>{
 // 1. funcion para mostrar los diseños.
 function cargarDiseños(productosElegidos){
   // Funcion para evitar que se duplique las cartas.
-  limpiarDiseño()
+  limpiar(contenedorDiseños);
   // Recorrer los diseños e inyectar la informacion.
   productosElegidos.forEach((productoElegido) => {
       const div = document.createElement("div");
@@ -209,7 +205,8 @@ async function seleccionCategoriaDiseño(e){
   
   // Condicional para eliminar mostrar todo.
   if(e.target.id === "todo"){
-    cargarDiseños(datas)
+    cargarDiseños(datas);
+
     return;
   }
 
@@ -259,12 +256,6 @@ async function selectDiseño(id) {
   }
 }
 
-// 6. funcion para limpiar.
-function limpiarDiseño (){
-  while (contenedorDiseños.firstChild) {
-    contenedorDiseños.removeChild(contenedorDiseños.firstChild)
-  }
-}
 
 // --------------- MODAL DE LAS IMAGENES ---------------
 // SELECTORES
@@ -387,8 +378,45 @@ function selectImagen (img){
 }
 
 
+// --------------- MODAL DE LAS IMAGENES ---------------
+// SELECTORES
+const botonesRestar = document.querySelectorAll(".restar");
+const botonesSumar = document.querySelectorAll(".sumar");
+const btnTalla = document.querySelector(".escoger-talla-cantidad")
 
+// EVENTOS
+btnTalla.addEventListener("click")
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleccionar los elementos
+  
 
+  // Asignar event listeners a los botones de restar
+  botonesRestar.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      decrementar(boton);
+    });
+  });
+
+  // Asignar event listeners a los botones de sumar
+  botonesSumar.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      incrementar(boton);
+    });
+  });
+
+});
+
+// Función para decrementar
+function decrementar(boton) {
+  const input = boton.nextElementSibling;
+  input.value = Math.max(parseInt(input.value, 10) - 1, 0);
+}
+
+// Función para incrementar
+function incrementar(boton) {
+  const input = boton.previousElementSibling;
+  input.value = parseInt(input.value, 10) + 1;
+}
 
 
 
@@ -440,14 +468,18 @@ function eliminarDiseño(){
 
   botonEliminar.addEventListener("click", () =>{
     if (contenedorDragDrop ) {
-      contenedorDragDrop.remove()
+      contenedorDragDrop.remove();
     }
   });
 
 }
 
-
-
+// 3. funcion para limpiar.
+function limpiar (elemento){
+  while (elemento.firstChild) {
+    elemento.removeChild(elemento.firstChild);
+  }
+}
 
 
 

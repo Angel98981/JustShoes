@@ -192,8 +192,8 @@ header{
     font-size: 18px;
 }
 
-.talla-cantidad {
-    margin: 4px 35px 0px 110px !important;
+.escoger-talla-cantidad {
+    margin: 4px 35px 0px 107px !important;
 }
 
 /* modal */
@@ -397,6 +397,45 @@ input[type="file"] {
     text-align: center;
     color: #8c8c8c;
 }
+
+.container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talla-cantidad{
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cantidad{
+    border: 1px solid rgb(98, 97, 97);
+    border-radius: 4px;
+    
+}
+
+.cantidad input{
+    width: 50px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.cantidad button{
+    width: 28px;
+    height: 28px;
+    border: none;
+    text-align: center;
+    text-decoration: none;  
+}
+
+
 
 /*Tambien te puede interesar*/
 

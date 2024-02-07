@@ -67,7 +67,7 @@ async function showProductsInCart() {
           <div class="o">
             <div class="nameProduct">
               <h2>${productoEncontrado.nombre}</h2>
-              <button data-index="${indexCarrito}" class="delete-button">
+              <button data-index="${indexCarrito}" class="delete-button btn-delete">
                 <span class="material-symbols-outlined"> delete </span>
               </button>
             </div>

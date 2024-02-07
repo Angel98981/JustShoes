@@ -145,6 +145,13 @@ header{
     padding-left: 190px;
 }
 
+.btn-delete{
+    border: 1px solid #cacaca;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
 /*Tambien te puede interesar*/
 
 .interes{

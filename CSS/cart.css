@@ -136,6 +136,14 @@ header{
     margin-bottom: 0px;
 }
 
+.titulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    padding-left: 120px;
+}
 
 /*Tambien te puede interesar*/
 

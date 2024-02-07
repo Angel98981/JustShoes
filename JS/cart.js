@@ -139,9 +139,9 @@ async function showProductsInCart() {
     <div class="formasPago">
       <p>Formas de pago aceptadas</p>
       <div class="pagos">
-        <img src="../img/pse-forma.jpg" alt="pse" width="50px"/>
-        <img src="../img/1200x600wa.png" alt="efecty" width="50px" />
-        <img src="../img/paypal.png" alt="paypal" width="50px"/>
+      <img src="../img/unnamed.png" alt="pse" width="70px"/>
+      <img src="../img/efecty-colombia-logo.png" alt="efecty" width="50px" />
+      <img src="../img/Paypal_2014_logo.png" alt="paypal" width="50px"/>
       </div>
     </div>
     `;

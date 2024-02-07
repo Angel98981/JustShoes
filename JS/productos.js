@@ -2,8 +2,7 @@ import { tenerDatos } from "../apiConnection/API.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   tenerDatos();
-  showProducts();
-  // getIdProduct();
+  showProducts();  
   nombreLogout();
 });
 function nombreLogout() {
@@ -12,8 +11,7 @@ function nombreLogout() {
   usernameElement.textContent = loggedInUserName.name;
 
   const logout = document.getElementById("logout");
-  let cerrar = JSON.parse(localStorage.getItem("validate"));
-  //
+  let cerrar = JSON.parse(localStorage.getItem("validate"));  
   if (cerrar === true) {
     logout.classList.remove("deactivate");
     usernameElement.classList.remove("deactivate");
@@ -29,12 +27,12 @@ function nombreLogout() {
 
 async function showProducts() {
   const contenedorProductos = document.querySelector("#tarjetasProductos");
-  const productos = await tenerDatos();
+  const productos = await tenerDatos(); // esperar la promesa
 
   productos.forEach((producto) => {
-    const {zapatos, sacos, pantalones, implementos, camisas, bolsos, accesorios} = producto;
-    [zapatos, sacos, camisas, pantalones, implementos, bolsos, accesorios,].forEach((categoria) => {
-      categoria.forEach((item) => {
+    const {zapatos, sacos, pantalones, implementos, camisas, bolsos, accesorios} = producto; // destructurando
+    [zapatos, sacos, camisas, pantalones, implementos, bolsos, accesorios,].forEach((categoria) => { // recorrer categorias
+      categoria.forEach((item) => { // recorrer dentro de categoria
         const columnas = document.createElement("div");
         columnas.innerHTML = `
           <div class="card" style="width: 18rem">
@@ -46,7 +44,7 @@ async function showProducts() {
             </a>
           </div>
         `;
-        contenedorProductos.appendChild(columnas);
+        contenedorProductos.appendChild(columnas); 
       });
     });
   });
@@ -60,3 +58,4 @@ async function showProducts() {
     }
   });
 }
+

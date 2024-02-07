@@ -134,7 +134,7 @@ async function showProductsInCart() {
     </div>
     <hr />
     <div class="pagar">
-      <button class="btn btn-dark">Pagar</button>
+      <a href="../HTML/pagar.html"><button class="btn btn-dark">Pagar</button></a>
     </div>
     <div class="formasPago">
       <p>Formas de pago aceptadas</p>

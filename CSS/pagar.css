@@ -1,4 +1,3 @@
-/* Reglas generales */
 * {
     margin: 0px;
   }
@@ -20,6 +19,8 @@
     left: 20px;
     
   }
+
+
   
   /* inicio/producto/contacto */
   .def {
@@ -48,10 +49,202 @@
     font-size: 45px;
     font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 100;
   }
+  .nombreUsuario{
+    color: #81c9fa;
+    font-weight: bold;
+  }
+  .deactivate{
+    display: none;
+  }
 
-  /*ayuda y footer*/
+h2 {
+    margin: 10px;
+    text-align: center;
+}
 
-  .help {
+.categoriaItem {
+    padding: 20px;
+    text-align: center;
+    gap: 1px;
+    width: 20px;
+}
+
+
+hr.styled-hr {
+    border: 0;
+    /* Elimina el borde predeterminado */
+    height: 2px;
+    /* Altura de la línea */
+    background: linear-gradient(to right, #ccc, #333);
+    /* Degradado de colores */
+    margin: 10px 0;
+    /* Margen superior e inferior */
+}
+
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.check input {
+    margin-right: 10px;
+    /* Espacio entre el cuadro de checkbox y el texto */
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+    /* Ajusta la cantidad de espacio deseado */
+}
+
+/*estilos de los botones*/
+button {
+    --color: #2aa0c4;
+    font-family: inherit;
+    display: inline-block;
+    width: 7rem;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #ffffff;
+    transition: background 0s;
+}
+
+
+
+
+/*estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    
+    padding: 8px;
+    text-align: center;
+}
+
+
+.linea-horizontal {
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+
+
+
+/* estilos de la card dentro del modal*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 280px;
+    max-height: 330px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+        -4px -4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+        -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-image-container {
+    width: 100%;
+    height: 64%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-icon {
+    font-size: 40px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 17px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #1797b8;
+    cursor: default;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+
+.card-des {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    margin: 0;
+    font-size: 13px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #1797b8;
+    cursor: default;
+}
+
+
+.help {
     padding-top: 50px;
     background-color: #c5bcc0;
     display: grid;
@@ -81,10 +274,40 @@
   }
 
 
-  .nombreUsuario{
-    color: #81c9fa;
-    font-weight: bold;
+  .container{
+    width: 40%;
+    margin: 0%;
   }
-  .deactivate{
-    display: none;
+.targetagris{
+  width: 50%;
+}
+
+.papa{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Estilos generales del formulario */
+form {
+  max-width: 400px; /* Ancho máximo del formulario */
+
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+  form {
+      max-width: 100%; /* Hacer que el formulario ocupe el ancho completo en pantallas pequeñas */
   }
+
+  /* Ajustes específicos para inputs en pantallas pequeñas */
+  input {
+      width: 100%; /* Hacer que los inputs ocupen el ancho completo */
+      margin-bottom: 10px; /* Agregar espacio entre los inputs */
+  }
+
+  /* Otros ajustes según tus necesidades */
+}

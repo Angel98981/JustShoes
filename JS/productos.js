@@ -35,6 +35,16 @@ async function showProducts() {
       categoria.forEach((item) => { // recorrer dentro de categoria
         const columnas = document.createElement("div");
         columnas.innerHTML = `
+          <style>
+            .producto-link{
+              color:black;
+              text-decoration:none;
+              font-weight: bold;
+            }
+            .card{
+              height: 26.5rem;
+            }
+          </style>
           <div class="card" style="width: 18rem">
             <a href="vistaProducto.html" idElement="${item.id}" class="producto-link">
               <img src="${item.imgPrincipal}" class="card-img-top" alt="...">
